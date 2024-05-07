@@ -6,8 +6,9 @@ title: 解相儒
 name_pronunciation: Xie Xiang Ru (Jim)
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Xiang Ru
+last_name: Xie
+English_name: Jim
 
 # Status emoji
 status:
