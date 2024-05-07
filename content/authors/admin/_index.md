@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 吳健雄
+title: 解相儒
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Xie Xiang Ru (Jim)
 
 # Full name (for SEO)
 first_name: Shiung Wu
