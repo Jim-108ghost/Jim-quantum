@@ -76,6 +76,7 @@ features:
   avatar:
     gravatar: false
     shape: circle
+    rotate_degree: 180
   comment:
     provider: ''
     disqus:
