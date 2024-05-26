@@ -43,9 +43,6 @@ education:
     - course: High school
       institution: Beijing No.12 Highschool
       year: 2015-2021
-    - course: -
-      institution: -
-      year: -
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
