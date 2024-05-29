@@ -23,8 +23,7 @@ role: Student of Physics
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Nankai Univeristy
-    url: https://www.stanford.edu/
-
+    url: https://physics.nankai.edu.cn/
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include quantum sensing, quantum computing and quantum simulation with AMO physics.
 
