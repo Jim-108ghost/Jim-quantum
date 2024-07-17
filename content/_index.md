@@ -65,7 +65,7 @@ sections:
         - title: summer intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
-          company_logo: org-CQT
+          company_logo: org-gc
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
