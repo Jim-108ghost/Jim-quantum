@@ -36,6 +36,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
+    - course: PhD student in Coldatoms
+      institution: Peking Univeristy
+      year: 2025-
     - course: Undergraduate in Physics
       institution: Nankai Univeristy
       year: 2021-2025
@@ -117,5 +120,5 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Jim is a person who really in physics, whose dream is to build next generation quantum computer. In addition, Jim also love playing football and piano. In his spare time, he would like to travel around the world.
 {style="text-align: justify;"}
