@@ -65,7 +65,7 @@ sections:
         - title: Pre-PhD & FYP 
           company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
           company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
-          company_logo: cnoe.jpg
+          company_logo: org-cnoe
           location: Beijing, China
           date_start: '2024-08-01'
           date_end: ''
@@ -73,7 +73,7 @@ sections:
         - title: Semester Intern
           company: Institute of Quantum Electronics @ PKU
           company_url: 'https://iqe.pku.edu.cn/'
-          company_logo: org-gc
+          company_logo: org-iqe
           location: Beijing, China
           date_start: '2024-03-01'
           date_end: '2024-07-01'
@@ -81,7 +81,7 @@ sections:
         - title: Summer Intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
-          company_logo: cqt.png
+          company_logo: org-cqt
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
@@ -94,7 +94,7 @@ sections:
         - title: Undergraduate
           company: Chern Institute of Mathematics @ NKU
           company_url: 'http://www.nim.nankai.edu.cn/'
-          company_logo: cim.jpg
+          company_logo: org-cim
           location: Tianjin, China
           date_start: '2022-03-01'
           date_end: '2024-07-01'
