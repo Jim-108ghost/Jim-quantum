@@ -62,10 +62,26 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: summer intern
+        - title: Pre-PhD & FYP 
+          company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
+          company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
+          company_logo: org-CNOE
+          location: Beijing, China
+          date_start: '2024-08-01'
+          date_end: ''
+          description: Taught electronic engineering and researched semiconductor physics.
+        - title: Semester Intern
+          company: Institute of Quantum Electronics @ PKU
+          company_url: 'https://iqe.pku.edu.cn/'
+          company_logo: org-IQE
+          location: Beijing, China
+          date_start: '2024-03-01'
+          date_end: '2024-07-01'
+          description: Taught electronic engineering and researched semiconductor physics.
+        - title: Summer Intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
-          company_logo: org-gc
+          company_logo: org-CQT
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
@@ -75,13 +91,13 @@ sections:
               * Analysing
               * Modelling
               * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
+        - title: Undergraduate
+          company: Chern Institute of Mathematics @ NKU
+          company_url: 'http://www.nim.nankai.edu.cn/'
+          company_logo: org-CIM
+          location: Tianjin, China
+          date_start: '2022-03-01'
+          date_end: '2024-07-01'
           description: Taught electronic engineering and researched semiconductor physics.
     design:
       columns: '2'
