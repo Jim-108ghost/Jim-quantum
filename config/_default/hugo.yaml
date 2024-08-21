@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Jim's Quantum Home Page # Website name
-baseURL: 'https://www.QuantumJim.com' # Website URL
+baseURL: 'https://QuantumJim.com' # Website URL
 
 ############################
 ## LANGUAGE
