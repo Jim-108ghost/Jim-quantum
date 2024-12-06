@@ -25,7 +25,7 @@ organizations:
   - name: Nankai Univeristy
     url: https://physics.nankai.edu.cn/
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include quantum sensing, quantum computing and quantum simulation with AMO physics.
+bio: My research interests include quantum sensing, quantum computing and quantum simulation with netrual atom array.
 
 # Interests to show in About widget
 interests:
@@ -51,13 +51,13 @@ education:
 skills:
   - name: Technical
     items:
-      - name: Python
-        description: ''
+      - name: Code with ChatGPT
+        description: 'Coding with help of BLM is really effective and necessary in nowdays research'
         percent: 80
         icon: python
         icon_pack: fab
-      - name: Data Science
-        description: ''
+      - name: Optics
+        description: 'Mounting optics on board. Trying to aling beams from here to there with various optics, just like drawing. '
         percent: 100
         icon: chart-line
         icon_pack: fas
