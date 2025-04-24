@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD student in Coldatoms
+    - course: PhD student in Yb Rydberg Atom Array
       institution: Peking Univeristy
       year: 2025-
     - course: Undergraduate in Physics
