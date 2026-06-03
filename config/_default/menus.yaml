@@ -7,8 +7,8 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Posts
-    url: '#posts'
+  - name: Research News
+    url: '#research-news'
     weight: 20
   - name: Projects
     url: '#projects'
@@ -19,6 +19,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 50
+  - name: Posts
+    url: '#posts'
+    weight: 55
   - name: Contact
     url: '#contact'
     weight: 60

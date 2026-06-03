@@ -22,29 +22,32 @@ role: Student of Physics
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Nankai Univeristy
-    url: https://physics.nankai.edu.cn/
+  - name: Peking University
+    url: https://www.pku.edu.cn/
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include quantum sensing, quantum computing and quantum simulation with netrual atom array.
+bio: My research interests include quantum computation with neutral-atom arrays, laser cooling and control of alkaline-earth(-like) atoms, and on-chip architectures for scalable quantum systems.
 
 # Interests to show in About widget
 interests:
-  - Quantum Sensing
-  - Quantum Simulation
-  - Quantum Computing
+  - Quantum computation with ytterbium neutral-atom arrays
+  - Novel laser-cooling and coherent-control methods for alkaline-earth(-like) atoms
+  - On-chip architectures for scalable neutral-atom quantum computation
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD student in Yb Rydberg Atom Array
-      institution: Peking Univeristy
+      institution: Peking University
       year: 2025-
-    - course: Undergraduate in Physics
+    - course: Bachelor in Physics
       institution: Nankai Univeristy
       year: 2021-2025
-    - course: High school
+    - course: Middle school
       institution: Beijing No.12 Highschool
       year: 2015-2021
+    - course: Primary school
+      institution: Fengtai No.1 Primary School
+      year: 2009-2015
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -120,5 +123,5 @@ social:
 highlight_name: true
 ---
 
-Jim is a person who really in physics, whose dream is to build next generation quantum computer. In addition, Jim also love playing football and piano. In his spare time, he would like to travel around the world.
+Jim is passionate about physics and dreams of helping build the next generation of quantum computers. His current interests focus on ytterbium neutral-atom arrays, laser cooling and control of alkaline-earth(-like) atoms, and possible routes toward on-chip neutral-atom quantum systems. Beyond research, Jim enjoys playing football and piano, traveling, and taking part in 10K and half-marathon events.
 {style="text-align: justify;"}
