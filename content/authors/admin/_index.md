@@ -52,42 +52,20 @@ education:
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
-  - name: Technical
+  - name: Technical Skills
     items:
-      - name: Code with ChatGPT
-        description: 'Coding with help of BLM is really effective and necessary in nowdays research'
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: Optics
-        description: 'Mounting optics on board. Trying to aling beams from here to there with various optics, just like drawing. '
-        percent: 100
-        icon: chart-line
-        icon_pack: fas
-      - name: SQL
+      - name: Codex-assisted physics modeling and software development
         description: ''
-        percent: 40
-        icon: database
-        icon_pack: fas
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
+        icon: codex-color
+        icon_pack: custom
+      - name: Complex optical-system design, construction, and alignment
         description: ''
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
+        icon: laser-mirror-user
+        icon_pack: custom
+      - name: Vacuum-chamber design, assembly, and commissioning
         description: ''
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
+        icon: cold-atom-vacuum
+        icon_pack: custom
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -123,5 +101,5 @@ social:
 highlight_name: true
 ---
 
-Jim is passionate about physics and dreams of helping build the next generation of quantum computers. His current interests focus on ytterbium neutral-atom arrays, laser cooling and control of alkaline-earth(-like) atoms, and possible routes toward on-chip neutral-atom quantum systems. Beyond research, Jim enjoys playing football and piano, traveling, and taking part in 10K and half-marathon events.
+I am passionate about physics and dream of helping build the next generation of quantum computers. I am especially drawn to the experimental techniques of cold-atom physics, the structure of atomic energy levels, and the physical questions that neutral-atom platforms make it possible to explore. Beyond research, I enjoy playing football and piano, traveling, and taking part in 10K and half-marathon events.
 {style="text-align: justify;"}

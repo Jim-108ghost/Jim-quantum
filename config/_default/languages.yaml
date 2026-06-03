@@ -1,22 +1,38 @@
 # Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  languageName: English
+  weight: 1
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+zh:
+  languageCode: zh-Hans
+  languageName: 中文
+  title: Jim 的量子主页
+  weight: 2
+  params:
+    description: Jim 的个人学术主页，记录冷原子物理、量子计算与生活内容。
+  menu:
+    main:
+      - name: 首页
+        url: '#about'
+        weight: 10
+      - name: 科研动态
+        url: '#research-news'
+        weight: 20
+      - name: 项目
+        url: '#projects'
+        weight: 30
+      - name: 报告
+        url: '#talks'
+        weight: 40
+      - name: 论文
+        url: '#featured'
+        weight: 50
+      - name: 生活随笔
+        url: '#posts'
+        weight: 55
+      - name: 联系方式
+        url: '#contact'
+        weight: 60
