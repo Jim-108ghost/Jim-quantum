@@ -74,9 +74,9 @@ features:
     content_dir: content
     branch: main
   avatar:
-    gravatar: True
+    gravatar: False
     shape: circle
-    rotate_degree: 180
+    rotate_degree: 0
   comment:
     provider: ''
     disqus:
