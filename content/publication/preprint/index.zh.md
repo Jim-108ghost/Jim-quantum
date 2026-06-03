@@ -1,28 +1,21 @@
 ---
 title: "基于 Yang-Mills 方程预测角动量波"
 authors:
-  - Ji-Jian Liang
-  - Jun-Feng Li
-  - Wen-Kai Fu
-  - admin
   - Xing-Yan Fan
-  - Sheng-Ming Li
-  - Hui Liu
+  - Xiang-Ru Xie
   - Jing-Ling Chen
 date: "2024-01-01T00:00:00Z"
-doi: "10.1016/j.rinp.2023.107095"
+doi: "10.1016/j.rinp.2023.107300"
 publishDate: "2024-01-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 54, 107095"
+publication: "*Results in Physics*, 56, 107300"
 publication_short: "*Results in Physics*"
 abstract: ""
 summary: "关于基于 Yang-Mills 方程预测角动量波的研究。"
 tags:
   - 量子力学
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2023.107095
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -38,4 +31,3 @@ image:
 projects: []
 slides: ""
 ---
-

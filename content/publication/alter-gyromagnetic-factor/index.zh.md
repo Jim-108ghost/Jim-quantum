@@ -1,22 +1,21 @@
 ---
 title: "一种改变旋磁因子的可能机制"
 authors:
-  - admin
   - Jing-Ling Chen
+  - Xing-Yan Fan
+  - Xiang-Ru Xie
 date: "2025-02-01T00:00:00Z"
-doi: "10.1016/j.rinp.2025.107934"
+doi: "10.1016/j.rinp.2025.108125"
 publishDate: "2025-02-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 69, 107934"
+publication: "*Results in Physics*, 69, 108125"
 publication_short: "*Results in Physics*"
 abstract: ""
 summary: "一种改变旋磁因子的可能机制。"
 tags:
   - 量子力学
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2025.107934
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -32,4 +31,3 @@ image:
 projects: []
 slides: ""
 ---
-

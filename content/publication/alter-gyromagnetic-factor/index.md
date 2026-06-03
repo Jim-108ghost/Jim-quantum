@@ -1,22 +1,21 @@
 ---
-title: "A Possible Mechanism to Alter the Gyromagnetic Factor"
+title: "A possible mechanism to alter gyromagnetic factor"
 authors:
-  - admin
   - Jing-Ling Chen
+  - Xing-Yan Fan
+  - Xiang-Ru Xie
 date: "2025-02-01T00:00:00Z"
-doi: "10.1016/j.rinp.2025.107934"
+doi: "10.1016/j.rinp.2025.108125"
 publishDate: "2025-02-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 69, 107934"
+publication: "*Results in Physics*, 69, 108125"
 publication_short: "*Results in Physics*"
 abstract: ""
-summary: "A possible mechanism to alter the gyromagnetic factor."
+summary: "A possible mechanism to alter gyromagnetic factor."
 tags:
   - Quantum mechanics
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2025.107934
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -32,4 +31,3 @@ image:
 projects: []
 slides: ""
 ---
-

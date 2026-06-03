@@ -1,9 +1,9 @@
 ---
-title: "Spin Vector Potential and Spin Aharonov-Bohm Effect"
+title: "Spin vector potential and spin Aharonov-Bohm effect"
 authors:
   - Jing-Ling Chen
   - Xing-Yan Fan
-  - admin
+  - Xiang-Ru Xie
 date: "2025-11-01T00:00:00Z"
 doi: "10.1016/j.fmre.2023.10.003"
 publishDate: "2025-11-01T00:00:00Z"
@@ -15,9 +15,7 @@ summary: "A study of spin vector potential and the spin Aharonov-Bohm effect."
 tags:
   - Quantum mechanics
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.fmre.2023.10.003
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -33,4 +31,3 @@ image:
 projects: []
 slides: ""
 ---
-

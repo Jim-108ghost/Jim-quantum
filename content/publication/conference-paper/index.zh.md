@@ -2,26 +2,24 @@
 title: "含自旋类氢原子模型中的 SO(4) 对称性"
 authors:
   - Xing-Yan Fan
-  - admin
+  - Xiang-Ru Xie
   - Sheng-Ming Li
   - Jing-Ling Chen
 author_notes:
   - "共同一作"
   - "共同一作"
 date: "2024-07-01T00:00:00Z"
-doi: "10.1016/j.rinp.2024.107497"
+doi: "10.1016/j.rinp.2024.107879"
 publishDate: "2024-07-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 62, 107497"
+publication: "*Results in Physics*, 63, 107879"
 publication_short: "*Results in Physics*"
 abstract: ""
 summary: "关于含自旋类氢原子模型中 SO(4) 对称性的研究。"
 tags:
   - 量子力学
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2024.107497
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -37,4 +35,3 @@ image:
 projects: []
 slides: ""
 ---
-

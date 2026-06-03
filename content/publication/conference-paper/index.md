@@ -1,27 +1,25 @@
 ---
-title: "SO(4) Symmetry in a Hydrogen-atom-like Model with Spin"
+title: "SO(4) symmetry in hydrogen-atom-like model with spin"
 authors:
   - Xing-Yan Fan
-  - admin
+  - Xiang-Ru Xie
   - Sheng-Ming Li
   - Jing-Ling Chen
 author_notes:
   - "Equal contribution"
   - "Equal contribution"
 date: "2024-07-01T00:00:00Z"
-doi: "10.1016/j.rinp.2024.107497"
+doi: "10.1016/j.rinp.2024.107879"
 publishDate: "2024-07-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 62, 107497"
+publication: "*Results in Physics*, 63, 107879"
 publication_short: "*Results in Physics*"
 abstract: ""
 summary: "A study of SO(4) symmetry in a hydrogen-atom-like model with spin."
 tags:
   - Quantum mechanics
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2024.107497
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -37,4 +35,3 @@ image:
 projects: []
 slides: ""
 ---
-

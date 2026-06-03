@@ -1,28 +1,21 @@
 ---
-title: "Predicting Angular Momentum Waves Based on Yang-Mills Equations"
+title: "Predicting angular-momentum waves based on Yang-Mills equations"
 authors:
-  - Ji-Jian Liang
-  - Jun-Feng Li
-  - Wen-Kai Fu
-  - admin
   - Xing-Yan Fan
-  - Sheng-Ming Li
-  - Hui Liu
+  - Xiang-Ru Xie
   - Jing-Ling Chen
 date: "2024-01-01T00:00:00Z"
-doi: "10.1016/j.rinp.2023.107095"
+doi: "10.1016/j.rinp.2023.107300"
 publishDate: "2024-01-01T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Results in Physics*, 54, 107095"
+publication: "*Results in Physics*, 56, 107300"
 publication_short: "*Results in Physics*"
 abstract: ""
-summary: "A study of angular momentum waves based on Yang-Mills equations."
+summary: "A study of angular-momentum waves based on Yang-Mills equations."
 tags:
   - Quantum mechanics
 featured: false
-links:
-  - name: DOI
-    url: https://doi.org/10.1016/j.rinp.2023.107095
+links: []
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -38,4 +31,3 @@ image:
 projects: []
 slides: ""
 ---
-

@@ -205,19 +205,22 @@ sections:
         {{< gallery album="demo" >}}
     design:
       columns: '1'
-  - block: collection
+  - block: markdown
     id: featured
     content:
       title: Publications
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
+      subtitle: ''
+      text: |-
+        1. Fan, X.-Y.; **Xie, X.-R.**\*; Li, S.-M.; Chen, J.-L. [SO(4) symmetry in hydrogen-atom-like model with spin](/publication/conference-paper/). *Results in Physics* **2024**, *63*, 107879. [DOI](https://doi.org/10.1016/j.rinp.2024.107879)  
+           \*Equal contribution.
+
+        2. Chen, J.-L.; Fan, X.-Y.; **Xie, X.-R.** [Spin vector potential and spin Aharonov-Bohm effect](/publication/journal-article/). *Fundamental Research* **2025**, *5*(6), 2500-2504. [DOI](https://doi.org/10.1016/j.fmre.2023.10.003)
+
+        3. Chen, J.-L.; Fan, X.-Y.; **Xie, X.-R.** [A possible mechanism to alter gyromagnetic factor](/publication/alter-gyromagnetic-factor/). *Results in Physics* **2025**, *69*, 108125. [DOI](https://doi.org/10.1016/j.rinp.2025.108125)
+
+        4. Fan, X.-Y.; **Xie, X.-R.**; Chen, J.-L. [Predicting angular-momentum waves based on Yang-Mills equations](/publication/preprint/). *Results in Physics* **2024**, *56*, 107300. [DOI](https://doi.org/10.1016/j.rinp.2023.107300)
     design:
       columns: '2'
-      view: citation
   - block: collection
     id: talks
     content:
