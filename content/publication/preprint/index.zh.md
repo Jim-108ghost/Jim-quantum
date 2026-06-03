@@ -1,5 +1,5 @@
 ---
-title: "Predicting Angular Momentum Waves Based on Yang-Mills Equations"
+title: "基于 Yang-Mills 方程预测角动量波"
 authors:
   - Ji-Jian Liang
   - Jun-Feng Li
@@ -16,9 +16,9 @@ publication_types: ["article-journal"]
 publication: "*Results in Physics*, 54, 107095"
 publication_short: "*Results in Physics*"
 abstract: ""
-summary: "A study of angular momentum waves based on Yang-Mills equations."
+summary: "关于基于 Yang-Mills 方程预测角动量波的研究。"
 tags:
-  - Quantum mechanics
+  - 量子力学
 featured: false
 links:
   - name: DOI

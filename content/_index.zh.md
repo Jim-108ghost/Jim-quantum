@@ -99,14 +99,16 @@ sections:
   - block: collection
     id: featured
     content:
-      title: 代表论文
+      title: 论文
       filters:
         folders:
           - publication
-        featured_only: true
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
     design:
       columns: '2'
-      view: card
+      view: citation
   - block: collection
     id: talks
     content:

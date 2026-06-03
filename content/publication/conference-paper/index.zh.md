@@ -1,13 +1,13 @@
 ---
-title: "SO(4) Symmetry in a Hydrogen-atom-like Model with Spin"
+title: "含自旋类氢原子模型中的 SO(4) 对称性"
 authors:
   - Xing-Yan Fan
   - admin
   - Sheng-Ming Li
   - Jing-Ling Chen
 author_notes:
-  - "Equal contribution"
-  - "Equal contribution"
+  - "共同一作"
+  - "共同一作"
 date: "2024-07-01T00:00:00Z"
 doi: "10.1016/j.rinp.2024.107497"
 publishDate: "2024-07-01T00:00:00Z"
@@ -15,9 +15,9 @@ publication_types: ["article-journal"]
 publication: "*Results in Physics*, 62, 107497"
 publication_short: "*Results in Physics*"
 abstract: ""
-summary: "A study of SO(4) symmetry in a hydrogen-atom-like model with spin."
+summary: "关于含自旋类氢原子模型中 SO(4) 对称性的研究。"
 tags:
-  - Quantum mechanics
+  - 量子力学
 featured: false
 links:
   - name: DOI

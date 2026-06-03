@@ -1,5 +1,5 @@
 ---
-title: "Spin Vector Potential and Spin Aharonov-Bohm Effect"
+title: "自旋矢势与自旋 Aharonov-Bohm 效应"
 authors:
   - Jing-Ling Chen
   - Xing-Yan Fan
@@ -11,9 +11,9 @@ publication_types: ["article-journal"]
 publication: "*Fundamental Research*, 5(6), 2500-2504"
 publication_short: "*Fundamental Research*"
 abstract: ""
-summary: "A study of spin vector potential and the spin Aharonov-Bohm effect."
+summary: "关于自旋矢势与自旋 Aharonov-Bohm 效应的研究。"
 tags:
-  - Quantum mechanics
+  - 量子力学
 featured: false
 links:
   - name: DOI
