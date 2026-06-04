@@ -1,0 +1,34 @@
+<script>
+  (function () {
+    var host = window.location.hostname;
+    if (host !== 'localhost' && host !== '127.0.0.1') {
+      return;
+    }
+
+    function localizeLanguageLinks() {
+      var links = document.querySelectorAll('.i18n-dropdown a.dropdown-item');
+      links.forEach(function (link) {
+        var target = link.getAttribute('data-target');
+        if (!target) {
+          try {
+            target = new URL(link.href).pathname;
+          } catch (error) {
+            return;
+          }
+        }
+
+        link.href = window.location.origin + target;
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.assign(window.location.origin + target);
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', localizeLanguageLinks);
+    } else {
+      localizeLanguageLinks();
+    }
+  })();
+</script>
