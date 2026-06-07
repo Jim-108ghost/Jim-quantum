@@ -13,9 +13,39 @@
   vertical-align: -0.35rem;
 }
 
-.wg-experience .experience-logo {
+.wg-experience .experience-entry {
+  gap: 0.25rem;
+}
+
+.wg-experience .experience-logo-wrap {
+  flex: 0 0 96px;
   width: 96px;
-  height: 56px;
+  min-width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wg-experience .experience-logo-wrap a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.wg-experience .experience-logo {
+  display: block;
+  width: 96px;
+  max-width: 96px;
+  height: 64px;
   object-fit: contain;
   object-position: center;
+}
+
+.wg-experience .experience-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.wg-experience .experience-description {
+  margin-top: 0.75rem;
 }

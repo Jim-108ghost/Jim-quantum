@@ -50,13 +50,13 @@
           {{- end -}}
 
           {{- if $logo }}
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2">
+          <div class="experience-entry d-flex align-items-start">
+            <div class="experience-logo-wrap mr-3 mb-2">
               {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
               <img src="{{ $logo.RelPermalink }}" class="experience-logo" alt="{{.company | plainify}}" loading="lazy">
               {{- with .company_url}}</a>{{end -}}
             </div>
-            <div>
+            <div class="experience-body">
           {{ end }}
 
               <div class="section-subheading card-title exp-title text-muted my-0">{{.title | markdownify | emojify}}</div>
@@ -76,12 +76,14 @@
                 {{end}}
               </div>
 
+              {{with .description}}<div class="card-text experience-description">{{. | markdownify | emojify}}</div>{{end}}
+
           {{- if $logo }}
             </div>
           </div>
+          {{else}}
+            {{with .description}}<div class="card-text experience-description">{{. | markdownify | emojify}}</div>{{end}}
           {{end}}
-
-          {{with .description}}<div class="card-text">{{. | markdownify | emojify}}</div>{{end}}
         </div>
       </div>
     </div>

@@ -150,32 +150,33 @@ sections:
       title: 联系方式
       subtitle:
       text: |-
-        欢迎通过邮件与我联系。
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+        欢迎就冷原子物理、中性原子量子计算和学术合作进行交流。
+      email: 1805972161@qq.com
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        street: 北京大学新燕园校区
+        city: 北京市
+        region: 昌平区马池口镇
+        country: 中国
+        country_code: CN
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
+        latitude: '40.17498'
+        longitude: '116.15692'
       contact_links:
-        - icon: twitter
+        - icon: envelope
+          icon_pack: fas
+          name: Gmail
+          link: 'mailto:xxr2110584@gmail.com'
+        - icon: github
           icon_pack: fab
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
+          name: GitHub
+          link: 'https://github.com/Jim-108ghost'
+        - icon: university
+          icon_pack: fas
+          name: 北京大学
+          link: 'https://www.pku.edu.cn/'
       autolink: true
       form:
-        provider: netlify
+        provider: ''
         formspree:
           id:
         netlify:
