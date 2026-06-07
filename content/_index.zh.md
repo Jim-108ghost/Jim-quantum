@@ -105,15 +105,15 @@ sections:
         <div class="selected-publications">
           <article class="selected-publication">
             <div class="selected-pub-thumb">
-              <img src="/media/publications/so4-symmetry.png" alt="SO(4) symmetry energy-level diagram">
+              <img src="../media/publications/so4-symmetry.png" alt="SO(4) symmetry energy-level diagram">
             </div>
             <div class="selected-pub-body">
-              <h3><a href="/zh/publication/conference-paper/">SO(4) symmetry in hydrogen-atom-like model with spin</a></h3>
+              <h3><a href="publication/conference-paper/">SO(4) symmetry in hydrogen-atom-like model with spin</a></h3>
               <p class="selected-pub-authors">Fan, X.-Y.; <strong>Xie, X.-R.</strong>*; Li, S.-M.; Chen, J.-L.</p>
               <p class="selected-pub-venue"><em>Results in Physics</em> <span>2024</span>, 63, 107879</p>
               <p class="selected-pub-note">*共同一作。</p>
               <div class="selected-pub-links">
-                <a href="/zh/publication/conference-paper/">ABS</a>
+                <a href="publication/conference-paper/">ABS</a>
                 <a href="https://doi.org/10.1016/j.rinp.2024.107879" target="_blank" rel="noopener">DOI</a>
                 <a href="https://doi.org/10.1016/j.rinp.2024.107879" target="_blank" rel="noopener">HTML</a>
               </div>
@@ -122,14 +122,14 @@ sections:
 
           <article class="selected-publication">
             <div class="selected-pub-thumb">
-              <img src="/media/publications/spin-vector-potential.png" alt="Spin vector potential and spin Aharonov-Bohm effect schematic">
+              <img src="../media/publications/spin-vector-potential.png" alt="Spin vector potential and spin Aharonov-Bohm effect schematic">
             </div>
             <div class="selected-pub-body">
-              <h3><a href="/zh/publication/journal-article/">Spin vector potential and spin Aharonov-Bohm effect</a></h3>
+              <h3><a href="publication/journal-article/">Spin vector potential and spin Aharonov-Bohm effect</a></h3>
               <p class="selected-pub-authors">Chen, J.-L.; Fan, X.-Y.; <strong>Xie, X.-R.</strong></p>
               <p class="selected-pub-venue"><em>Fundamental Research</em> <span>2025</span>, 5(6), 2500-2504</p>
               <div class="selected-pub-links">
-                <a href="/zh/publication/journal-article/">ABS</a>
+                <a href="publication/journal-article/">ABS</a>
                 <a href="https://doi.org/10.1016/j.fmre.2023.10.003" target="_blank" rel="noopener">DOI</a>
                 <a href="https://doi.org/10.1016/j.fmre.2023.10.003" target="_blank" rel="noopener">HTML</a>
               </div>
@@ -138,14 +138,14 @@ sections:
 
           <article class="selected-publication">
             <div class="selected-pub-thumb">
-              <img src="/media/publications/gyromagnetic-factor.png" alt="Gyromagnetic factor mechanism schematic">
+              <img src="../media/publications/gyromagnetic-factor.png" alt="Gyromagnetic factor mechanism schematic">
             </div>
             <div class="selected-pub-body">
-              <h3><a href="/zh/publication/alter-gyromagnetic-factor/">A possible mechanism to alter gyromagnetic factor</a></h3>
+              <h3><a href="publication/alter-gyromagnetic-factor/">A possible mechanism to alter gyromagnetic factor</a></h3>
               <p class="selected-pub-authors">Chen, J.-L.; Fan, X.-Y.; <strong>Xie, X.-R.</strong></p>
               <p class="selected-pub-venue"><em>Results in Physics</em> <span>2025</span>, 69, 108125</p>
               <div class="selected-pub-links">
-                <a href="/zh/publication/alter-gyromagnetic-factor/">ABS</a>
+                <a href="publication/alter-gyromagnetic-factor/">ABS</a>
                 <a href="https://doi.org/10.1016/j.rinp.2025.108125" target="_blank" rel="noopener">DOI</a>
                 <a href="https://doi.org/10.1016/j.rinp.2025.108125" target="_blank" rel="noopener">HTML</a>
               </div>
@@ -154,14 +154,14 @@ sections:
 
           <article class="selected-publication">
             <div class="selected-pub-thumb">
-              <img src="/media/publications/angular-momentum-waves.png" alt="Angular-momentum waves schematic">
+              <img src="../media/publications/angular-momentum-waves.png" alt="Angular-momentum waves schematic">
             </div>
             <div class="selected-pub-body">
-              <h3><a href="/zh/publication/preprint/">Predicting angular-momentum waves based on Yang-Mills equations</a></h3>
+              <h3><a href="publication/preprint/">Predicting angular-momentum waves based on Yang-Mills equations</a></h3>
               <p class="selected-pub-authors">Fan, X.-Y.; <strong>Xie, X.-R.</strong>; Chen, J.-L.</p>
               <p class="selected-pub-venue"><em>Results in Physics</em> <span>2024</span>, 56, 107300</p>
               <div class="selected-pub-links">
-                <a href="/zh/publication/preprint/">ABS</a>
+                <a href="publication/preprint/">ABS</a>
                 <a href="https://doi.org/10.1016/j.rinp.2023.107300" target="_blank" rel="noopener">DOI</a>
                 <a href="https://doi.org/10.1016/j.rinp.2023.107300" target="_blank" rel="noopener">HTML</a>
               </div>
@@ -170,14 +170,14 @@ sections:
 
           <article class="selected-publication">
             <div class="selected-pub-thumb">
-              <img src="/media/publications/epr-steering-inequalities.png" alt="Einstein-Podolsky-Rosen steering inequalities schematic">
+              <img src="../media/publications/epr-steering-inequalities.png" alt="Einstein-Podolsky-Rosen steering inequalities schematic">
             </div>
             <div class="selected-pub-body">
-              <h3><a href="/zh/publication/epr-steering-inequalities/">Stronger Einstein-Podolsky-Rosen steering inequalities to detect the boundary between quantum mechanics and classical models</a></h3>
+              <h3><a href="publication/epr-steering-inequalities/">Stronger Einstein-Podolsky-Rosen steering inequalities to detect the boundary between quantum mechanics and classical models</a></h3>
               <p class="selected-pub-authors">Wang, R.-C.; Li, Z.-C.; Fan, X.-Y.; <strong>Xie, X.-R.</strong>; Wei, H.-H.; Oh, C. H.; Chen, J.-L.</p>
               <p class="selected-pub-venue"><em>Physical Review A</em> <span>2024</span>, 110, 052210</p>
               <div class="selected-pub-links">
-                <a href="/zh/publication/epr-steering-inequalities/">ABS</a>
+                <a href="publication/epr-steering-inequalities/">ABS</a>
                 <a href="https://doi.org/10.1103/PhysRevA.110.052210" target="_blank" rel="noopener">DOI</a>
                 <a href="https://doi.org/10.1103/PhysRevA.110.052210" target="_blank" rel="noopener">HTML</a>
               </div>
