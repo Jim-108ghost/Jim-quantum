@@ -38,7 +38,7 @@ image:
 links: []
 url_code: ""
 url_pdf: ""
-url_slides: "/uploads/ips-meeting-2025-yb-optical-tweezers-slides.pdf"
+url_slides: "https://jim-108ghost.github.io/Jim-quantum/uploads/ips-meeting-2025-yb-optical-tweezers-slides.pdf"
 url_video: ""
 slides: ""
 projects: []
