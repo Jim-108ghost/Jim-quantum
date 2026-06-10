@@ -21,14 +21,22 @@ sections:
       title: 经历
       date_format: Jan 2006
       items:
+        - title: PhD
+          company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
+          company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
+          company_logo: pku-emblem.svg
+          location: Beijing, China
+          date_start: '2025-09-01'
+          date_end: ''
+          description: 搭建 YbII 系统，一套可以连续装载的光镊 Yb 原子阵列。
         - title: Pre-PhD & FYP
           company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
           company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
           company_logo: pku-emblem.svg
           location: Beijing, China
           date_start: '2024-08-01'
-          date_end: ''
-          description: 参与冷原子和量子光学相关实验研究。
+          date_end: '2025-08-01'
+          description: 搭建 YbI 系统，包括设计 MOT 光路和光镊光路，并优化 compressed MOT。
         - title: Semester Intern
           company: Institute of Quantum Electronics @ PKU
           company_url: 'https://iqe.pku.edu.cn/'
@@ -36,7 +44,7 @@ sections:
           location: Beijing, China
           date_start: '2024-03-01'
           date_end: '2024-07-01'
-          description: 参与量子电子学和原子物理相关实验工作。
+          description: 参与超冷原子陀螺仪实验的图像处理和数据分析。
         - title: Summer Intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
@@ -44,7 +52,7 @@ sections:
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
-          description: 参与量子技术相关学习与研究训练。
+          description: 搭建基于激光烧蚀技术的紧凑 Sr 原子源，并分析原子荧光信号。
         - title: Undergraduate
           company: Chern Institute of Mathematics @ NKU
           company_url: 'http://www.nim.nankai.edu.cn/'
@@ -52,7 +60,7 @@ sections:
           location: Tianjin, China
           date_start: '2022-03-01'
           date_end: '2024-07-01'
-          description: 完成本科阶段的科研训练与课程学习。
+          description: 参与自旋和对称性的理论研究。
     design:
       columns: '2'
   - block: collection
@@ -190,6 +198,7 @@ sections:
     id: talks
     content:
       title: 报告
+      count: 5
       filters:
         folders:
           - event
@@ -257,6 +266,19 @@ sections:
           id:
         netlify:
           captcha: false
+    design:
+      columns: '2'
+  - block: markdown
+    id: crazy-ideas
+    content:
+      title: 疯狂想法
+      subtitle: ''
+      text: |-
+        <details class="crazy-ideas-panel">
+          <summary>打开低调笔记本</summary>
+          <p>一个低调的位置，用来记录还没有完全成形的科研想法、猜想方案，以及未来可能发展成项目的问题。</p>
+          <p><a href="crazy-ideas/">浏览笔记本</a></p>
+        </details>
     design:
       columns: '2'
 ---

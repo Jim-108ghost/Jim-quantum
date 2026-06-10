@@ -62,14 +62,22 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: PhD
+          company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
+          company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
+          company_logo: pku-emblem.svg
+          location: Beijing, China
+          date_start: '2025-09-01'
+          date_end: ''
+          description: Building the YbII system, a continuously reloadable optical-tweezer array of ytterbium atoms.
         - title: Pre-PhD & FYP 
           company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
           company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
           company_logo: pku-emblem.svg
           location: Beijing, China
           date_start: '2024-08-01'
-          date_end: ''
-          description: Taught electronic engineering and researched semiconductor physics.
+          date_end: '2025-08-01'
+          description: Building the YbI system, including MOT and optical-tweezer beam-path design and optimization of the compressed MOT.
         - title: Semester Intern
           company: Institute of Quantum Electronics @ PKU
           company_url: 'https://iqe.pku.edu.cn/'
@@ -77,7 +85,7 @@ sections:
           location: Beijing, China
           date_start: '2024-03-01'
           date_end: '2024-07-01'
-          description: Taught electronic engineering and researched semiconductor physics.
+          description: Worked on image processing and data analysis for an ultracold-atom gyroscope experiment.
         - title: Summer Intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
@@ -85,12 +93,7 @@ sections:
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
-          description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
+          description: Built a compact Sr atomic source based on laser ablation and analyzed atomic fluorescence signals.
         - title: Undergraduate
           company: Chern Institute of Mathematics @ NKU
           company_url: 'http://www.nim.nankai.edu.cn/'
@@ -98,49 +101,7 @@ sections:
           location: Tianjin, China
           date_start: '2022-03-01'
           date_end: '2024-07-01'
-          description: Taught electronic engineering and researched semiconductor physics.
-    design:
-      columns: '2'
-  - block: accomplishments
-    content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          description: Participated in theoretical research on spin and symmetry.
     design:
       columns: '2'
   - block: collection
@@ -299,6 +260,7 @@ sections:
     id: talks
     content:
       title: Recent & Upcoming Talks
+      count: 5
       filters:
         folders:
           - event
@@ -381,6 +343,19 @@ sections:
         netlify:
           # Enable CAPTCHA challenge to reduce spam?
           captcha: false
+    design:
+      columns: '2'
+  - block: markdown
+    id: crazy-ideas
+    content:
+      title: Crazy Ideas
+      subtitle: ''
+      text: |-
+        <details class="crazy-ideas-panel">
+          <summary>Open the quiet notebook</summary>
+          <p>A low-key place for half-formed research ideas, speculative schemes, and questions that may become projects later.</p>
+          <p><a href="crazy-ideas/">Browse the notebook</a></p>
+        </details>
     design:
       columns: '2'
 ---
