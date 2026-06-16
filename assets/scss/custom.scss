@@ -278,10 +278,23 @@
   color: #111827;
 }
 
+.crazy-notebook-editing [data-toggle-edit] {
+  background: #111827;
+  color: #fff;
+}
+
 .crazy-markdown-workspace {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1rem;
+}
+
+.crazy-notebook-preview .crazy-markdown-workspace {
+  grid-template-columns: 1fr;
+}
+
+.crazy-notebook-preview .crazy-editor-wrap {
+  display: none;
 }
 
 .crazy-editor-wrap textarea {

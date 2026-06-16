@@ -7,6 +7,7 @@
   var notebook = root.querySelector('[data-notebook]');
   var editor = root.querySelector('[data-markdown-editor]');
   var preview = root.querySelector('[data-markdown-preview]');
+  var editButton = root.querySelector('[data-toggle-edit]');
   var copyButton = root.querySelector('[data-copy-markdown]');
   var downloadButton = root.querySelector('[data-download-markdown]');
   var lockButton = root.querySelector('[data-lock-again]');
@@ -71,7 +72,21 @@
     notebook.hidden = false;
     editor.value = localStorage.getItem(storageKey) || editor.value;
     renderMarkdown(editor.value);
-    editor.focus();
+    setEditMode(false);
+  }
+
+  function setEditMode(isEditing) {
+    notebook.classList.toggle('crazy-notebook-editing', isEditing);
+    notebook.classList.toggle('crazy-notebook-preview', !isEditing);
+    if (editButton) {
+      editButton.textContent = isEditing
+        ? editButton.dataset.previewLabel || 'Preview'
+        : editButton.dataset.editLabel || 'Edit';
+      editButton.setAttribute('aria-pressed', isEditing ? 'true' : 'false');
+    }
+    if (isEditing) {
+      editor.focus();
+    }
   }
 
   if (sessionStorage.getItem(sessionKey) === 'true') {
@@ -97,6 +112,11 @@
     renderMarkdown(editor.value);
   });
 
+  root.addEventListener('click', function (event) {
+    if (!event.target.closest('[data-toggle-edit]')) return;
+    setEditMode(!notebook.classList.contains('crazy-notebook-editing'));
+  });
+
   if (copyButton) {
     copyButton.addEventListener('click', function () {
       navigator.clipboard.writeText(editor.value);
@@ -119,6 +139,7 @@
       sessionStorage.removeItem(sessionKey);
       notebook.hidden = true;
       form.hidden = false;
+      setEditMode(false);
     });
   }
 })();
