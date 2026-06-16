@@ -166,6 +166,33 @@
           border-color: #00a99d !important;
           color: #fff !important;
         }
+
+        html.lab-theme body .project-filters .btn.btn-primary,
+        body.lab-theme .project-filters .btn.btn-primary,
+        body[data-theme-style="lab"] .project-filters .btn.btn-primary {
+          background: #fff !important;
+          color: #111827 !important;
+          border: 1px solid rgba(17, 24, 39, 0.22) !important;
+          border-radius: 999px !important;
+          padding: 0.45rem 0.85rem !important;
+          font-size: 0.95rem !important;
+          line-height: 1.2 !important;
+          box-shadow: none !important;
+        }
+
+        html.lab-theme body .project-filters .btn.btn-primary.active,
+        html.lab-theme body .project-filters .btn.btn-primary:hover,
+        html.lab-theme body .project-filters .btn.btn-primary:focus,
+        body.lab-theme .project-filters .btn.btn-primary.active,
+        body.lab-theme .project-filters .btn.btn-primary:hover,
+        body.lab-theme .project-filters .btn.btn-primary:focus,
+        body[data-theme-style="lab"] .project-filters .btn.btn-primary.active,
+        body[data-theme-style="lab"] .project-filters .btn.btn-primary:hover,
+        body[data-theme-style="lab"] .project-filters .btn.btn-primary:focus {
+          background: linear-gradient(135deg, #00a99d, #7c3aed) !important;
+          border-color: #00a99d !important;
+          color: #fff !important;
+        }
       `;
       document.head.appendChild(style);
     }

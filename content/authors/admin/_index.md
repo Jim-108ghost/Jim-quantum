@@ -23,7 +23,7 @@ role: PhD researcher in Physics
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Peking University
-    url: https://www.pku.edu.cn/
+    url: https://english.pku.edu.cn/index.html
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include quantum computation with neutral-atom arrays, laser cooling and control of alkaline-earth(-like) atoms, and on-chip architectures for scalable quantum systems.
 

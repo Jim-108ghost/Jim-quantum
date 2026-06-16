@@ -80,7 +80,7 @@ sections:
           description: Building the YbI system, including MOT and optical-tweezer beam-path design and optimization of the compressed MOT.
         - title: Semester Intern
           company: Institute of Quantum Electronics @ PKU
-          company_url: 'https://iqe.pku.edu.cn/'
+          company_url: 'https://iqe.pku.edu.cn/english/home/index.htm'
           company_logo: pku-emblem.svg
           location: Beijing, China
           date_start: '2024-03-01'
@@ -96,7 +96,7 @@ sections:
           description: Built a compact Sr atomic source based on laser ablation and analyzed atomic fluorescence signals.
         - title: Undergraduate
           company: Chern Institute of Mathematics @ NKU
-          company_url: 'http://www.nim.nankai.edu.cn/'
+          company_url: 'http://en.cim.nankai.edu.cn/'
           company_logo: nankai-emblem.svg
           location: Tianjin, China
           date_start: '2022-03-01'
@@ -148,10 +148,12 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Numerical Simulation
+          tag: Numerical Simulation
+        - name: SolidWorks
+          tag: SolidWorks
+        - name: Theory Notes
+          tag: Theory Notes
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
@@ -332,7 +334,7 @@ sections:
         - icon: university
           icon_pack: fas
           name: Peking University
-          link: 'https://www.pku.edu.cn/'
+          link: 'https://english.pku.edu.cn/index.html'
       # Automatically link email and phone or display as text?
       autolink: true
       # Email form provider

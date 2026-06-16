@@ -1,4 +1,4 @@
----
+﻿---
 title: ''
 date: 2022-10-24
 type: landing
@@ -7,18 +7,18 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: 个人简介
+      title: Biography
       username: admin
   - block: skills
     content:
-      title: 技术能力
+      title: Skills
       text: ''
       username: admin
     design:
       columns: '1'
   - block: experience
     content:
-      title: 经历
+      title: Experience
       date_format: Jan 2006
       items:
         - title: PhD
@@ -28,7 +28,7 @@ sections:
           location: Beijing, China
           date_start: '2025-09-01'
           date_end: ''
-          description: 搭建 YbII 系统，一套可以连续装载的光镊 Yb 原子阵列。
+          description: Building the YbII system, a continuously reloadable optical-tweezer array of ytterbium atoms.
         - title: Pre-PhD & FYP
           company: State Key Laboratory for Mesoscopic Physics and Frontiers Science Center for Nano-optoelectronics, School of Physics @ Peking University
           company_url: 'https://nano-optoelectronics.pku.edu.cn/index.htm'
@@ -36,7 +36,7 @@ sections:
           location: Beijing, China
           date_start: '2024-08-01'
           date_end: '2025-08-01'
-          description: 搭建 YbI 系统，包括设计 MOT 光路和光镊光路，并优化 compressed MOT。
+          description: Building the YbI system, including MOT and optical-tweezer beam-path design and optimization of the compressed MOT.
         - title: Semester Intern
           company: Institute of Quantum Electronics @ PKU
           company_url: 'https://iqe.pku.edu.cn/'
@@ -44,7 +44,7 @@ sections:
           location: Beijing, China
           date_start: '2024-03-01'
           date_end: '2024-07-01'
-          description: 参与超冷原子陀螺仪实验的图像处理和数据分析。
+          description: Worked on image processing and data analysis for an ultracold-atom gyroscope experiment.
         - title: Summer Intern
           company: Center for Quantum Technology @ NUS & School of Physical and Mathematical Science @ NTU
           company_url: 'https://cqt10.quantumlah.org/'
@@ -52,7 +52,7 @@ sections:
           location: Singapore
           date_start: '2022-07-01'
           date_end: '2022-10-01'
-          description: 搭建基于激光烧蚀技术的紧凑 Sr 原子源，并分析原子荧光信号。
+          description: Built a compact Sr atomic source based on laser ablation and analyzed atomic fluorescence signals.
         - title: Undergraduate
           company: Chern Institute of Mathematics @ NKU
           company_url: 'http://www.nim.nankai.edu.cn/'
@@ -60,13 +60,13 @@ sections:
           location: Tianjin, China
           date_start: '2022-03-01'
           date_end: '2024-07-01'
-          description: 参与自旋和对称性的理论研究。
+          description: Participated in theoretical research on spin and symmetry.
     design:
       columns: '2'
   - block: collection
     id: research-news
     content:
-      title: 科研动态
+      title: Research News
       subtitle: ''
       text: ''
       count: 5
@@ -88,18 +88,20 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: 项目
+      title: 椤圭洰
       filters:
         folders:
           - project
       default_button_index: 0
       buttons:
-        - name: 全部
+        - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Numerical Simulation
+          tag: Numerical Simulation
+        - name: SolidWorks
+          tag: SolidWorks
+        - name: Theory Notes
+          tag: Theory Notes
     design:
       columns: '1'
       view: showcase
@@ -115,7 +117,7 @@ sections:
   - block: markdown
     id: featured
     content:
-      title: 精选论文
+      title: Selected Publications
       subtitle: ''
       text: |-
         <div class="selected-publications">
@@ -127,7 +129,7 @@ sections:
               <h3><a href="publication/conference-paper/">SO(4) symmetry in hydrogen-atom-like model with spin</a></h3>
               <p class="selected-pub-authors">Fan, X.-Y.; <strong>Xie, X.-R.</strong>*; Li, S.-M.; Chen, J.-L.</p>
               <p class="selected-pub-venue"><em>Results in Physics</em> <span>2024</span>, 63, 107879</p>
-              <p class="selected-pub-note">*共同一作。</p>
+              <p class="selected-pub-note">*鍏卞悓涓€浣溿€?/p>
               <div class="selected-pub-links">
                 <a href="publication/conference-paper/">ABS</a>
                 <a href="https://doi.org/10.1016/j.rinp.2024.107879" target="_blank" rel="noopener">DOI</a>
@@ -205,7 +207,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: 报告
+      title: 鎶ュ憡
       count: 5
       filters:
         folders:
@@ -218,7 +220,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 生活随笔
+      title: 鐢熸椿闅忕瑪
       subtitle: ''
       text: ''
       count: 5
@@ -240,16 +242,16 @@ sections:
   - block: contact
     id: contact
     content:
-      title: 联系方式
+      title: Contact
       subtitle:
       text: |-
-        欢迎就冷原子物理、中性原子量子计算和学术合作进行交流。
+        I am open to discussions on cold-atom physics, neutral-atom quantum computation, and academic collaboration.
       email: 1805972161@qq.com
       address:
-        street: 北京大学新燕园校区
-        city: 北京市
-        region: 昌平区马池口镇
-        country: 中国
+        street: New Yanyuan Campus, Peking University
+        city: Beijing
+        region: Changping District, Machikou Town
+        country: China
         country_code: CN
       coordinates:
         latitude: '40.17498'
@@ -265,7 +267,7 @@ sections:
           link: 'https://github.com/Jim-108ghost'
         - icon: university
           icon_pack: fas
-          name: 北京大学
+          name: 鍖椾含澶у
           link: 'https://www.pku.edu.cn/'
       autolink: true
       form:
@@ -279,13 +281,13 @@ sections:
   - block: markdown
     id: crazy-ideas
     content:
-      title: 疯狂想法
+      title: 鐤媯鎯虫硶
       subtitle: ''
       text: |-
         <details class="crazy-ideas-panel">
-          <summary>打开低调笔记本</summary>
-          <p>一个低调的位置，用来记录还没有完全成形的科研想法、猜想方案，以及未来可能发展成项目的问题。</p>
-          <p><a href="crazy-ideas/">浏览笔记本</a></p>
+          <summary>鎵撳紑浣庤皟绗旇鏈?/summary>
+          <p>涓€涓綆璋冪殑浣嶇疆锛岀敤鏉ヨ褰曡繕娌℃湁瀹屽叏鎴愬舰鐨勭鐮旀兂娉曘€佺寽鎯虫柟妗堬紝浠ュ強鏈潵鍙兘鍙戝睍鎴愰」鐩殑闂銆?/p>
+          <p><a href="crazy-ideas/">娴忚绗旇鏈?/a></p>
         </details>
     design:
       columns: '2'

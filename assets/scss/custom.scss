@@ -546,6 +546,58 @@ body[data-theme-style="lab"] .wg-skills .skills-content .section-subheading::aft
   border-color: #111827;
 }
 
+.project-toolbar {
+  margin-bottom: 1.5rem;
+}
+
+.project-filters .btn-toolbar {
+  justify-content: center;
+}
+
+.project-filters .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.project-filters .btn.btn-primary {
+  border: 1px solid rgba(17, 24, 39, 0.22) !important;
+  border-radius: 999px !important;
+  background: #fff !important;
+  color: #111827 !important;
+  padding: 0.45rem 0.85rem !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+  box-shadow: none !important;
+}
+
+.project-filters .btn.btn-primary.active,
+.project-filters .btn.btn-primary:hover,
+.project-filters .btn.btn-primary:focus {
+  background: #111827 !important;
+  color: #fff !important;
+  border-color: #111827 !important;
+}
+
+body.lab-theme .project-filters .btn.btn-primary,
+body[data-theme-style="lab"] .project-filters .btn.btn-primary {
+  background: #fff !important;
+  color: #111827 !important;
+  border-color: rgba(17, 24, 39, 0.22) !important;
+}
+
+body.lab-theme .project-filters .btn.btn-primary.active,
+body.lab-theme .project-filters .btn.btn-primary:hover,
+body.lab-theme .project-filters .btn.btn-primary:focus,
+body[data-theme-style="lab"] .project-filters .btn.btn-primary.active,
+body[data-theme-style="lab"] .project-filters .btn.btn-primary:hover,
+body[data-theme-style="lab"] .project-filters .btn.btn-primary:focus {
+  background: linear-gradient(135deg, #00a99d, #7c3aed) !important;
+  border-color: #00a99d !important;
+  color: #fff !important;
+}
+
 .personal-gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
