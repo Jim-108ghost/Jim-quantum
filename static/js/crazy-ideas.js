@@ -7,8 +7,13 @@
   var notebook = root.querySelector('[data-notebook]');
   var editor = root.querySelector('[data-markdown-editor]');
   var preview = root.querySelector('[data-markdown-preview]');
+  var copyButton = root.querySelector('[data-copy-markdown]');
+  var downloadButton = root.querySelector('[data-download-markdown]');
+  var lockButton = root.querySelector('[data-lock-again]');
   var storageKey = root.dataset.storageKey || 'crazy-ideas-markdown';
   var sessionKey = 'crazy-ideas-unlocked';
+
+  if (!form || !message || !notebook || !editor || !preview) return;
 
   function escapeHtml(value) {
     return value.replace(/[&<>"']/g, function (char) {
@@ -26,6 +31,7 @@
   function renderMarkdown(markdown) {
     var html = '';
     var inList = false;
+
     markdown.split(/\r?\n/).forEach(function (line) {
       if (/^###\s+/.test(line)) {
         if (inList) { html += '</ul>'; inList = false; }
@@ -47,6 +53,7 @@
         inList = false;
       }
     });
+
     if (inList) html += '</ul>';
     preview.innerHTML = html;
   }
@@ -64,6 +71,7 @@
     notebook.hidden = false;
     editor.value = localStorage.getItem(storageKey) || editor.value;
     renderMarkdown(editor.value);
+    editor.focus();
   }
 
   if (sessionStorage.getItem(sessionKey) === 'true') {
@@ -75,13 +83,12 @@
     var username = form.elements.username.value.trim();
     var password = form.elements.password.value;
     var hash = await sha256(username + ':' + password);
+
     if (hash === root.dataset.authHash) {
       sessionStorage.setItem(sessionKey, 'true');
       unlock();
     } else {
-      message.textContent = document.documentElement.lang.indexOf('zh') === 0
-        ? '用户名或密码错误。'
-        : 'Wrong username or password.';
+      message.textContent = 'Wrong username or password.';
     }
   });
 
@@ -90,22 +97,28 @@
     renderMarkdown(editor.value);
   });
 
-  root.querySelector('[data-copy-markdown]').addEventListener('click', function () {
-    navigator.clipboard.writeText(editor.value);
-  });
+  if (copyButton) {
+    copyButton.addEventListener('click', function () {
+      navigator.clipboard.writeText(editor.value);
+    });
+  }
 
-  root.querySelector('[data-download-markdown]').addEventListener('click', function () {
-    var blob = new Blob([editor.value], { type: 'text/markdown' });
-    var link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'crazy-ideas.md';
-    link.click();
-    URL.revokeObjectURL(link.href);
-  });
+  if (downloadButton) {
+    downloadButton.addEventListener('click', function () {
+      var blob = new Blob([editor.value], { type: 'text/markdown' });
+      var link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'crazy-ideas.md';
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  }
 
-  root.querySelector('[data-lock-again]').addEventListener('click', function () {
-    sessionStorage.removeItem(sessionKey);
-    notebook.hidden = true;
-    form.hidden = false;
-  });
+  if (lockButton) {
+    lockButton.addEventListener('click', function () {
+      sessionStorage.removeItem(sessionKey);
+      notebook.hidden = true;
+      form.hidden = false;
+    });
+  }
 })();

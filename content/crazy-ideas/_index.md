@@ -45,8 +45,7 @@ header:
 
 ## Neutral-Atom Platforms
 
-- Write quick sketches here.
-- Keep hypotheses, possible experiments, and open questions lightweight.
+ \alpha_3 optical tweezers
 
 ## Questions
 
