@@ -1,5 +1,5 @@
 (function () {
-  document.querySelectorAll('[data-personal-gallery]').forEach(function (gallery) {
+  function initGallery(gallery) {
     var buttons = gallery.querySelectorAll('[data-gallery-filter]');
     var items = gallery.querySelectorAll('[data-gallery-category]');
     var empty = gallery.querySelector('[data-gallery-empty]');
@@ -29,5 +29,15 @@
     });
 
     setFilter('quantum-lego-land');
-  });
+  }
+
+  function initAllGalleries() {
+    document.querySelectorAll('[data-personal-gallery]').forEach(initGallery);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllGalleries);
+  } else {
+    initAllGalleries();
+  }
 })();

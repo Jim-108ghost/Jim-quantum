@@ -7,17 +7,53 @@
 
   <div class="personal-gallery-grid">
     <figure class="personal-gallery-item" data-gallery-category="quantum-lego-land">
-      <img src="/media/gallery/quantum-lego-land-01.jpg" alt="Green laser light across an optical table">
-      <figcaption>Green beams across the optical table.</figcaption>
+      <img src="{{ "media/gallery/quantum-lego-land-01.jpg" | relURL }}" alt="Green laser light across an optical table">
+      <figcaption>556 nm narrow-line transition for secondary cooling of Yb atoms, with a temperature limit approaching 4 uK.</figcaption>
     </figure>
 
     <figure class="personal-gallery-item" data-gallery-category="quantum-lego-land">
-      <img src="/media/gallery/quantum-lego-land-02.jpg" alt="Purple laser light reflected through optics on an optical table">
-      <figcaption>Purple light, mirrors, cubes, and a small corner of Quantum LEGO-land.</figcaption>
+      <img src="{{ "media/gallery/quantum-lego-land-02.jpg" | relURL }}" alt="Purple laser light reflected through optics on an optical table">
+      <figcaption>399 nm strong transition for trapping and primary cooling of Yb atoms.</figcaption>
     </figure>
 
     <p class="personal-gallery-empty" data-gallery-empty hidden>No photos in this category yet.</p>
   </div>
 </div>
 
-<script src="/js/personal-gallery.js?v=20260616"></script>
+<script>
+  (function () {
+    function initGallery(gallery) {
+      var buttons = gallery.querySelectorAll('[data-gallery-filter]');
+      var items = gallery.querySelectorAll('[data-gallery-category]');
+      var empty = gallery.querySelector('[data-gallery-empty]');
+
+      function setFilter(category) {
+        var visibleCount = 0;
+
+        buttons.forEach(function (button) {
+          button.classList.toggle('active', button.dataset.galleryFilter === category);
+        });
+
+        items.forEach(function (item) {
+          var isVisible = item.dataset.galleryCategory === category;
+          item.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        if (empty) {
+          empty.hidden = visibleCount !== 0;
+        }
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          setFilter(button.dataset.galleryFilter);
+        });
+      });
+
+      setFilter('quantum-lego-land');
+    }
+
+    document.querySelectorAll('[data-personal-gallery]').forEach(initGallery);
+  })();
+</script>
