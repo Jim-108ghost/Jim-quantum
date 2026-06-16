@@ -10,7 +10,7 @@ status:
 
 superuser: true
 
-role: 物理学学生
+role: PhD researcher in Physics
 
 organizations:
   - name: 北京大学
