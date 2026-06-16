@@ -9,7 +9,7 @@ header:
   image: ''
 ---
 
-<section class="crazy-lock" data-idea-lock data-auth-hash="203f1c1f65c11d4b77c62cce7be6cb401db8612f3d8b45c7c2672936c9461906" data-storage-key="crazy-ideas-markdown">
+<section class="crazy-lock" data-idea-lock data-auth-hash="6dce97ca3baf703365dd8f10c4eea7c07dc558cc80eacb25a15368b1a78833aa" data-storage-key="crazy-ideas-markdown">
   <form class="crazy-login" data-login-form>
     <h2>Quiet notebook</h2>
     <p>This page is a low-key place for early research ideas, speculative schemes, and questions that may become projects later.</p>

@@ -5,6 +5,13 @@
       return;
     }
 
+    function fixContactAnchors() {
+      var links = document.querySelectorAll('a[href="/#contact"], a[href="/zh/#contact"]');
+      links.forEach(function (link) {
+        link.setAttribute('href', window.location.pathname + '#contact');
+      });
+    }
+
     function localizeLanguageLinks() {
       var links = document.querySelectorAll('.i18n-dropdown a.dropdown-item');
       links.forEach(function (link) {
@@ -26,8 +33,12 @@
     }
 
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', localizeLanguageLinks);
+      document.addEventListener('DOMContentLoaded', function () {
+        fixContactAnchors();
+        localizeLanguageLinks();
+      });
     } else {
+      fixContactAnchors();
       localizeLanguageLinks();
     }
   })();

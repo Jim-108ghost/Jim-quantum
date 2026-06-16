@@ -9,7 +9,7 @@ header:
   image: ''
 ---
 
-<section class="crazy-lock" data-idea-lock data-auth-hash="203f1c1f65c11d4b77c62cce7be6cb401db8612f3d8b45c7c2672936c9461906" data-storage-key="crazy-ideas-markdown-zh">
+<section class="crazy-lock" data-idea-lock data-auth-hash="6dce97ca3baf703365dd8f10c4eea7c07dc558cc80eacb25a15368b1a78833aa" data-storage-key="crazy-ideas-markdown-zh">
   <form class="crazy-login" data-login-form>
     <h2>低调笔记本</h2>
     <p>这里用来记录还没有完全成形的科研想法、猜想方案，以及未来可能发展成项目的问题。</p>
