@@ -163,7 +163,7 @@ sections:
       title: Gallery
       subtitle: ''
       text: |-
-        {{< gallery album="demo" >}}
+        {{< personal-gallery >}}
     design:
       columns: '1'
   - block: markdown

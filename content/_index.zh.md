@@ -105,6 +105,14 @@ sections:
       view: showcase
       flip_alt_rows: false
   - block: markdown
+    content:
+      title: Gallery
+      subtitle: ''
+      text: |-
+        {{< personal-gallery >}}
+    design:
+      columns: '1'
+  - block: markdown
     id: featured
     content:
       title: 精选论文
