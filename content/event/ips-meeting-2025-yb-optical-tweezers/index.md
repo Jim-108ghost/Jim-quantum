@@ -12,7 +12,7 @@ address:
   postcode: ""
   country: "Singapore"
 
-summary: "A contributed talk on trapping Yb atoms in optical tweezers for building a neutral-atom array platform."
+summary: "A contributed talk at IPS Meeting 2025 on trapping Yb atoms in optical tweezers for building a neutral-atom array platform."
 abstract: "We have built a new platform for Yb atom arrays and successfully trapped single atoms in optical tweezers."
 
 date: "2025-09-24T14:20:00+08:00"
