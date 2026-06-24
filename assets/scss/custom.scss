@@ -1,4 +1,4 @@
-.wg-skills .skills-wrapper {
+﻿.wg-skills .skills-wrapper {
   display: none;
 }
 
@@ -659,5 +659,566 @@ body[data-theme-style="lab"] .project-filters .btn.btn-primary:focus {
 
   .personal-gallery-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes jim-superfluid-drift {
+  0% { transform: translate3d(-3%, -2%, 0) scale(1); }
+  50% { transform: translate3d(3%, 2%, 0) scale(1.04); }
+  100% { transform: translate3d(-3%, -2%, 0) scale(1); }
+}
+
+@keyframes jim-superfluid-flow {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  100% { background-position: 210px 120px, -180px 160px, 0 0; }
+}
+
+html.superfluid-theme body,
+body.superfluid-theme,
+body[data-theme-style="superfluid"] {
+  background: #06141b !important;
+  color: #d8fbff !important;
+}
+
+html.superfluid-theme body::before,
+body.superfluid-theme::before,
+body[data-theme-style="superfluid"]::before {
+  content: "";
+  position: fixed;
+  inset: -12vh -12vw;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(48, 213, 200, 0.26), transparent 22rem),
+    radial-gradient(circle at 78% 12%, rgba(138, 92, 246, 0.28), transparent 24rem),
+    radial-gradient(circle at 68% 82%, rgba(80, 184, 255, 0.18), transparent 25rem),
+    linear-gradient(135deg, #06141b 0%, #0b1828 48%, #130b24 100%);
+  animation: jim-superfluid-drift 18s ease-in-out infinite;
+}
+
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.42;
+  background:
+    radial-gradient(circle, rgba(182, 255, 252, 0.28) 0 1.5px, transparent 2px) 0 0 / 52px 52px,
+    radial-gradient(circle, rgba(181, 132, 255, 0.22) 0 1.2px, transparent 2px) 26px 24px / 68px 68px,
+    linear-gradient(115deg, transparent 0 35%, rgba(48, 213, 200, 0.08) 42%, transparent 50% 100%);
+  animation: jim-superfluid-flow 28s linear infinite;
+}
+
+html.superfluid-theme body .page-body,
+body.superfluid-theme .page-body,
+body[data-theme-style="superfluid"] .page-body {
+  background: transparent !important;
+}
+
+html.superfluid-theme body .home-section,
+body.superfluid-theme .home-section,
+body[data-theme-style="superfluid"] .home-section {
+  background: rgba(6, 20, 27, 0.38) !important;
+  backdrop-filter: blur(1px);
+}
+
+html.superfluid-theme body #about,
+body.superfluid-theme #about,
+body[data-theme-style="superfluid"] #about {
+  background:
+    linear-gradient(135deg, rgba(8, 38, 48, 0.82), rgba(31, 16, 58, 0.72)) !important;
+  border-bottom: 1px solid rgba(48, 213, 200, 0.25);
+}
+
+html.superfluid-theme body .page-header,
+html.superfluid-theme body .navbar,
+body.superfluid-theme .page-header,
+body.superfluid-theme .navbar,
+body[data-theme-style="superfluid"] .page-header,
+body[data-theme-style="superfluid"] .navbar {
+  background: rgba(5, 18, 27, 0.86) !important;
+  border-bottom: 3px solid #30d5c8 !important;
+  box-shadow: 0 14px 34px rgba(48, 213, 200, 0.18) !important;
+  backdrop-filter: blur(14px);
+}
+
+html.superfluid-theme body .navbar-brand,
+html.superfluid-theme body .navbar-nav .nav-link,
+html.superfluid-theme body .nav-icons .nav-link,
+body.superfluid-theme .navbar-brand,
+body.superfluid-theme .navbar-nav .nav-link,
+body.superfluid-theme .nav-icons .nav-link,
+body[data-theme-style="superfluid"] .navbar-brand,
+body[data-theme-style="superfluid"] .navbar-nav .nav-link,
+body[data-theme-style="superfluid"] .nav-icons .nav-link {
+  color: #d8fbff !important;
+}
+
+html.superfluid-theme body a,
+body.superfluid-theme a,
+body[data-theme-style="superfluid"] a,
+html.superfluid-theme body .network-icon a,
+body.superfluid-theme .network-icon a,
+body[data-theme-style="superfluid"] .network-icon a {
+  color: #65fff1 !important;
+}
+
+html.superfluid-theme body .article-style,
+html.superfluid-theme body .portrait-title h2,
+html.superfluid-theme body .portrait-title h3,
+html.superfluid-theme body .ul-interests,
+html.superfluid-theme body .ul-edu,
+body.superfluid-theme .article-style,
+body.superfluid-theme .portrait-title h2,
+body.superfluid-theme .portrait-title h3,
+body.superfluid-theme .ul-interests,
+body.superfluid-theme .ul-edu,
+body[data-theme-style="superfluid"] .article-style,
+body[data-theme-style="superfluid"] .portrait-title h2,
+body[data-theme-style="superfluid"] .portrait-title h3,
+body[data-theme-style="superfluid"] .ul-interests,
+body[data-theme-style="superfluid"] .ul-edu {
+  color: #d8fbff !important;
+}
+
+html.superfluid-theme body .section-heading h1,
+body.superfluid-theme .section-heading h1,
+body[data-theme-style="superfluid"] .section-heading h1 {
+  color: #e8fdff !important;
+  text-shadow: 0 0 22px rgba(48, 213, 200, 0.22);
+}
+
+html.superfluid-theme body .section-heading h1::after,
+body.superfluid-theme .section-heading h1::after,
+body[data-theme-style="superfluid"] .section-heading h1::after {
+  content: "";
+  display: block;
+  width: 8.5rem;
+  height: 4px;
+  margin: 0.55rem auto 0;
+  background: linear-gradient(90deg, #30d5c8, #8a5cf6, #50b8ff);
+  border-radius: 999px;
+  box-shadow: 0 0 18px rgba(48, 213, 200, 0.55);
+}
+
+html.superfluid-theme body .card,
+html.superfluid-theme body .selected-publications,
+html.superfluid-theme body .personal-gallery,
+html.superfluid-theme body .crazy-login,
+html.superfluid-theme body .crazy-preview-wrap,
+body.superfluid-theme .card,
+body.superfluid-theme .selected-publications,
+body.superfluid-theme .personal-gallery,
+body.superfluid-theme .crazy-login,
+body.superfluid-theme .crazy-preview-wrap,
+body[data-theme-style="superfluid"] .card,
+body[data-theme-style="superfluid"] .selected-publications,
+body[data-theme-style="superfluid"] .personal-gallery,
+body[data-theme-style="superfluid"] .crazy-login,
+body[data-theme-style="superfluid"] .crazy-preview-wrap {
+  background: rgba(7, 23, 33, 0.72) !important;
+  border: 1px solid rgba(101, 255, 241, 0.2) !important;
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.28),
+    0 0 32px rgba(138, 92, 246, 0.13) !important;
+}
+
+html.superfluid-theme body .avatar,
+body.superfluid-theme .avatar,
+body[data-theme-style="superfluid"] .avatar {
+  box-shadow:
+    0 0 0 7px rgba(48, 213, 200, 0.2),
+    0 0 0 13px rgba(138, 92, 246, 0.13),
+    0 0 42px rgba(80, 184, 255, 0.24) !important;
+}
+
+html.superfluid-theme body .personal-gallery-filters button,
+html.superfluid-theme body .project-filters .btn.btn-primary,
+body.superfluid-theme .personal-gallery-filters button,
+body.superfluid-theme .project-filters .btn.btn-primary,
+body[data-theme-style="superfluid"] .personal-gallery-filters button,
+body[data-theme-style="superfluid"] .project-filters .btn.btn-primary {
+  background: rgba(7, 23, 33, 0.7) !important;
+  color: #d8fbff !important;
+  border: 1px solid rgba(101, 255, 241, 0.32) !important;
+  border-radius: 999px !important;
+}
+
+html.superfluid-theme body .personal-gallery-filters button.active,
+html.superfluid-theme body .personal-gallery-filters button:hover,
+html.superfluid-theme body .project-filters .btn.btn-primary.active,
+html.superfluid-theme body .project-filters .btn.btn-primary:hover,
+body.superfluid-theme .personal-gallery-filters button.active,
+body.superfluid-theme .personal-gallery-filters button:hover,
+body.superfluid-theme .project-filters .btn.btn-primary.active,
+body.superfluid-theme .project-filters .btn.btn-primary:hover,
+body[data-theme-style="superfluid"] .personal-gallery-filters button.active,
+body[data-theme-style="superfluid"] .personal-gallery-filters button:hover,
+body[data-theme-style="superfluid"] .project-filters .btn.btn-primary.active,
+body[data-theme-style="superfluid"] .project-filters .btn.btn-primary:hover {
+  background: linear-gradient(135deg, #30d5c8, #8a5cf6) !important;
+  color: #05121b !important;
+  border-color: #65fff1 !important;
+}
+
+html.superfluid-theme .theme-dropdown [data-set-theme-superfluid],
+body.superfluid-theme .theme-dropdown [data-set-theme-superfluid] {
+  background: rgba(48, 213, 200, 0.16);
+  color: #65fff1;
+}
+
+/* Stronger Superfluid background layer. */
+@keyframes jim-superfluid-streams {
+  0% { transform: translateX(-18%) rotate(-8deg); opacity: 0.38; }
+  50% { transform: translateX(10%) rotate(-8deg); opacity: 0.72; }
+  100% { transform: translateX(32%) rotate(-8deg); opacity: 0.38; }
+}
+
+html.superfluid-theme body,
+body.superfluid-theme,
+body[data-theme-style="superfluid"] {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(48, 213, 200, 0.38), transparent 22rem),
+    radial-gradient(circle at 82% 16%, rgba(138, 92, 246, 0.36), transparent 24rem),
+    radial-gradient(circle at 66% 78%, rgba(80, 184, 255, 0.28), transparent 24rem),
+    #06141b !important;
+  background-attachment: fixed !important;
+}
+
+html.superfluid-theme body::before,
+body.superfluid-theme::before,
+body[data-theme-style="superfluid"]::before {
+  z-index: 0 !important;
+  opacity: 0.9 !important;
+}
+
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  z-index: 0 !important;
+  opacity: 0.82 !important;
+  background:
+    radial-gradient(circle, rgba(214, 255, 252, 0.75) 0 2px, transparent 2.8px) 0 0 / 44px 44px,
+    radial-gradient(circle, rgba(181, 132, 255, 0.62) 0 1.8px, transparent 2.6px) 22px 20px / 64px 64px,
+    repeating-linear-gradient(112deg, transparent 0 86px, rgba(48, 213, 200, 0.18) 88px 92px, transparent 96px 178px),
+    repeating-linear-gradient(68deg, transparent 0 118px, rgba(138, 92, 246, 0.13) 120px 124px, transparent 128px 230px) !important;
+  animation: jim-superfluid-flow 12s linear infinite !important;
+  mix-blend-mode: screen;
+}
+
+html.superfluid-theme body .page-body,
+body.superfluid-theme .page-body,
+body[data-theme-style="superfluid"] .page-body,
+html.superfluid-theme body .page-header,
+html.superfluid-theme body .navbar,
+body.superfluid-theme .page-header,
+body.superfluid-theme .navbar,
+body[data-theme-style="superfluid"] .page-header,
+body[data-theme-style="superfluid"] .navbar {
+  position: relative;
+  z-index: 1;
+}
+
+html.superfluid-theme body .page-body::before,
+body.superfluid-theme .page-body::before,
+body[data-theme-style="superfluid"] .page-body::before {
+  content: "";
+  position: fixed;
+  left: -35vw;
+  top: 14vh;
+  width: 160vw;
+  height: 42vh;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0 10%, rgba(101, 255, 241, 0.22) 22%, transparent 34% 42%, rgba(138, 92, 246, 0.18) 54%, transparent 70%),
+    linear-gradient(90deg, transparent 0 18%, rgba(80, 184, 255, 0.16) 30%, transparent 48% 100%);
+  filter: blur(9px);
+  animation: jim-superfluid-streams 14s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+html.superfluid-theme body .home-section,
+body.superfluid-theme .home-section,
+body[data-theme-style="superfluid"] .home-section {
+  position: relative;
+  z-index: 1;
+  background: rgba(6, 20, 27, 0.18) !important;
+}
+
+html.superfluid-theme body #about,
+body.superfluid-theme #about,
+body[data-theme-style="superfluid"] #about {
+  background: rgba(8, 28, 42, 0.52) !important;
+}
+
+/* More turbulent Superfluid motion. */
+@keyframes jim-superfluid-random-dots {
+  0% { background-position: 0 0, 24px 18px, 0 0, 0 0; filter: hue-rotate(0deg); }
+  23% { background-position: 58px -34px, -30px 62px, 140px -80px, -90px 30px; }
+  47% { background-position: -42px 76px, 84px -28px, -70px 120px, 120px -60px; filter: hue-rotate(16deg); }
+  71% { background-position: 96px 18px, -72px -84px, 180px 60px, -130px 110px; }
+  100% { background-position: 0 0, 24px 18px, 0 0, 0 0; filter: hue-rotate(0deg); }
+}
+
+@keyframes jim-superfluid-eddies {
+  0% { transform: translate3d(-8vw, -4vh, 0) rotate(0deg) scale(1); opacity: 0.72; }
+  19% { transform: translate3d(7vw, 3vh, 0) rotate(37deg) scale(1.08); opacity: 0.96; }
+  43% { transform: translate3d(-3vw, 9vh, 0) rotate(118deg) scale(0.98); opacity: 0.78; }
+  67% { transform: translate3d(10vw, -7vh, 0) rotate(211deg) scale(1.12); opacity: 1; }
+  100% { transform: translate3d(-8vw, -4vh, 0) rotate(360deg) scale(1); opacity: 0.72; }
+}
+
+@keyframes jim-superfluid-crosscurrents {
+  0% { transform: translate3d(-30vw, 6vh, 0) rotate(-13deg); opacity: 0.5; }
+  31% { transform: translate3d(5vw, -3vh, 0) rotate(8deg); opacity: 0.9; }
+  62% { transform: translate3d(28vw, 8vh, 0) rotate(-24deg); opacity: 0.62; }
+  100% { transform: translate3d(-30vw, 6vh, 0) rotate(-13deg); opacity: 0.5; }
+}
+
+html.superfluid-theme body::before,
+body.superfluid-theme::before,
+body[data-theme-style="superfluid"]::before {
+  opacity: 1 !important;
+  background:
+    radial-gradient(circle at 14% 22%, rgba(48, 213, 200, 0.58), transparent 18rem),
+    radial-gradient(circle at 82% 14%, rgba(138, 92, 246, 0.56), transparent 20rem),
+    radial-gradient(circle at 72% 76%, rgba(80, 184, 255, 0.42), transparent 22rem),
+    radial-gradient(circle at 30% 72%, rgba(101, 255, 241, 0.32), transparent 18rem),
+    linear-gradient(135deg, #020b11 0%, #071727 48%, #160825 100%) !important;
+  animation: jim-superfluid-eddies 16s ease-in-out infinite !important;
+}
+
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  opacity: 1 !important;
+  background:
+    radial-gradient(circle, rgba(220, 255, 252, 0.95) 0 2.4px, transparent 3.2px) 0 0 / 42px 42px,
+    radial-gradient(circle, rgba(190, 145, 255, 0.82) 0 2px, transparent 3px) 24px 18px / 61px 61px,
+    repeating-linear-gradient(103deg, transparent 0 48px, rgba(48, 213, 200, 0.28) 52px 58px, transparent 64px 138px),
+    repeating-linear-gradient(37deg, transparent 0 72px, rgba(138, 92, 246, 0.24) 76px 83px, transparent 90px 180px) !important;
+  animation: jim-superfluid-random-dots 17s ease-in-out infinite !important;
+  mix-blend-mode: screen;
+}
+
+html.superfluid-theme body .page-body::before,
+body.superfluid-theme .page-body::before,
+body[data-theme-style="superfluid"] .page-body::before {
+  left: -42vw !important;
+  top: 8vh !important;
+  width: 180vw !important;
+  height: 58vh !important;
+  opacity: 0.95 !important;
+  background:
+    linear-gradient(88deg, transparent 0 8%, rgba(101, 255, 241, 0.34) 18%, transparent 31% 43%, rgba(138, 92, 246, 0.28) 55%, transparent 72%),
+    linear-gradient(142deg, transparent 0 20%, rgba(80, 184, 255, 0.28) 31%, transparent 52% 100%),
+    linear-gradient(24deg, transparent 0 24%, rgba(48, 213, 200, 0.20) 37%, transparent 48% 100%) !important;
+  filter: blur(7px) saturate(1.45) !important;
+  animation: jim-superfluid-crosscurrents 11s ease-in-out infinite !important;
+}
+
+html.superfluid-theme body .page-body::after,
+body.superfluid-theme .page-body::after,
+body[data-theme-style="superfluid"] .page-body::after {
+  content: "";
+  position: fixed;
+  right: -24vw;
+  bottom: -12vh;
+  width: 92vw;
+  height: 70vh;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 35% 42%, rgba(101, 255, 241, 0.30), transparent 32%),
+    radial-gradient(ellipse at 62% 58%, rgba(138, 92, 246, 0.32), transparent 36%),
+    radial-gradient(ellipse at 50% 50%, rgba(80, 184, 255, 0.18), transparent 54%);
+  filter: blur(18px) saturate(1.55);
+  mix-blend-mode: screen;
+  animation: jim-superfluid-eddies 21s ease-in-out infinite reverse;
+}
+
+html.superfluid-theme body .home-section,
+body.superfluid-theme .home-section,
+body[data-theme-style="superfluid"] .home-section {
+  background: rgba(6, 20, 27, 0.10) !important;
+}
+
+html.superfluid-theme body #about,
+body.superfluid-theme #about,
+body[data-theme-style="superfluid"] #about {
+  background: rgba(8, 28, 42, 0.36) !important;
+}
+
+/* Local atom loading interaction: keep the global field quieter. */
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  opacity: 0.38 !important;
+}
+
+#jim-superfluid-loader-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+html.superfluid-theme body .page-body,
+body.superfluid-theme .page-body,
+body[data-theme-style="superfluid"] .page-body,
+html.superfluid-theme body .page-header,
+html.superfluid-theme body .navbar,
+body.superfluid-theme .page-header,
+body.superfluid-theme .navbar,
+body[data-theme-style="superfluid"] .page-header,
+body[data-theme-style="superfluid"] .navbar {
+  position: relative;
+  z-index: 1;
+}
+
+/* Superfluid refinement: no global lattice; slow local loading dominates. */
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  opacity: 0.28 !important;
+  background:
+    repeating-linear-gradient(103deg, transparent 0 58px, rgba(48, 213, 200, 0.22) 62px 68px, transparent 74px 148px),
+    repeating-linear-gradient(37deg, transparent 0 82px, rgba(138, 92, 246, 0.18) 86px 93px, transparent 100px 190px) !important;
+}
+
+html.superfluid-theme body .text-muted,
+html.superfluid-theme body .article-metadata,
+html.superfluid-theme body .article-metadata a,
+html.superfluid-theme body .personal-gallery-item figcaption,
+html.superfluid-theme body .personal-gallery-empty,
+html.superfluid-theme body .selected-pub-note,
+html.superfluid-theme body .portrait-title h3,
+html.superfluid-theme body .experience .text-muted,
+html.superfluid-theme body .card-text,
+html.superfluid-theme body .summary-link,
+html.superfluid-theme body .pub-list-item .article-metadata,
+body.superfluid-theme .text-muted,
+body.superfluid-theme .article-metadata,
+body.superfluid-theme .article-metadata a,
+body.superfluid-theme .personal-gallery-item figcaption,
+body.superfluid-theme .personal-gallery-empty,
+body.superfluid-theme .selected-pub-note,
+body.superfluid-theme .portrait-title h3,
+body.superfluid-theme .experience .text-muted,
+body.superfluid-theme .card-text,
+body.superfluid-theme .summary-link,
+body.superfluid-theme .pub-list-item .article-metadata,
+body[data-theme-style="superfluid"] .text-muted,
+body[data-theme-style="superfluid"] .article-metadata,
+body[data-theme-style="superfluid"] .article-metadata a,
+body[data-theme-style="superfluid"] .personal-gallery-item figcaption,
+body[data-theme-style="superfluid"] .personal-gallery-empty,
+body[data-theme-style="superfluid"] .selected-pub-note,
+body[data-theme-style="superfluid"] .portrait-title h3,
+body[data-theme-style="superfluid"] .experience .text-muted,
+body[data-theme-style="superfluid"] .card-text,
+body[data-theme-style="superfluid"] .summary-link,
+body[data-theme-style="superfluid"] .pub-list-item .article-metadata {
+  color: rgba(245, 255, 255, 0.92) !important;
+}
+
+html.superfluid-theme body p,
+html.superfluid-theme body li,
+body.superfluid-theme p,
+body.superfluid-theme li,
+body[data-theme-style="superfluid"] p,
+body[data-theme-style="superfluid"] li {
+  color: rgba(245, 255, 255, 0.94) !important;
+}
+
+/* Keep Superfluid effects visible but never above navigation controls. */
+#jim-superfluid-loader-canvas {
+  z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+html.superfluid-theme body .page-header,
+html.superfluid-theme body .navbar,
+html.superfluid-theme body .navbar .dropdown-menu,
+body.superfluid-theme .page-header,
+body.superfluid-theme .navbar,
+body.superfluid-theme .navbar .dropdown-menu,
+body[data-theme-style="superfluid"] .page-header,
+body[data-theme-style="superfluid"] .navbar,
+body[data-theme-style="superfluid"] .navbar .dropdown-menu {
+  position: relative;
+  z-index: 2000 !important;
+}
+
+html.superfluid-theme body .page-body,
+body.superfluid-theme .page-body,
+body[data-theme-style="superfluid"] .page-body {
+  position: relative;
+  z-index: 3;
+}
+
+/* Put local atom loading above section backgrounds and below readable content. */
+html.superfluid-theme body .home-section > .container,
+body.superfluid-theme .home-section > .container,
+body[data-theme-style="superfluid"] .home-section > .container,
+html.superfluid-theme body .page-body main,
+body.superfluid-theme .page-body main,
+body[data-theme-style="superfluid"] .page-body main {
+  position: relative;
+  z-index: 4;
+}
+
+/* Superfluid: keep the theme/language dropdown anchored to the top navigation. */
+html.superfluid-theme body .theme-dropdown .dropdown-menu,
+body.superfluid-theme .theme-dropdown .dropdown-menu,
+body[data-theme-style="superfluid"] .theme-dropdown .dropdown-menu {
+  position: fixed !important;
+  top: 3.6rem !important;
+  right: 1rem !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 3000 !important;
+  min-width: 11rem;
+  background: rgba(28, 30, 45, 0.96) !important;
+  border: 1px solid rgba(101, 255, 241, 0.18) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34) !important;
+}
+
+html.superfluid-theme body .i18n-dropdown .dropdown-menu,
+body.superfluid-theme .i18n-dropdown .dropdown-menu,
+body[data-theme-style="superfluid"] .i18n-dropdown .dropdown-menu {
+  position: fixed !important;
+  top: 3.6rem !important;
+  right: 1rem !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 3000 !important;
+}
+
+html.superfluid-theme body .navbar,
+html.superfluid-theme body .navbar .dropdown,
+html.superfluid-theme body .nav-icons,
+body.superfluid-theme .navbar,
+body.superfluid-theme .navbar .dropdown,
+body.superfluid-theme .nav-icons,
+body[data-theme-style="superfluid"] .navbar,
+body[data-theme-style="superfluid"] .navbar .dropdown,
+body[data-theme-style="superfluid"] .nav-icons {
+  z-index: 3001 !important;
+}
+
+@media (max-width: 991.98px) {
+  html.superfluid-theme body .theme-dropdown .dropdown-menu,
+  body.superfluid-theme .theme-dropdown .dropdown-menu,
+  body[data-theme-style="superfluid"] .theme-dropdown .dropdown-menu,
+  html.superfluid-theme body .i18n-dropdown .dropdown-menu,
+  body.superfluid-theme .i18n-dropdown .dropdown-menu,
+  body[data-theme-style="superfluid"] .i18n-dropdown .dropdown-menu {
+    top: 3.85rem !important;
+    right: 0.75rem !important;
   }
 }

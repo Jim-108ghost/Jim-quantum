@@ -1,4 +1,4 @@
-<script>
+﻿<script>
   (function () {
     var host = window.location.hostname;
     if (host !== 'localhost' && host !== '127.0.0.1') {
@@ -200,6 +200,7 @@
     function applyActiveMenu(choice) {
       document.querySelectorAll('.theme-dropdown .dropdown-item').forEach(function (button) {
         var isActive =
+          (choice === 'superfluid' && button.hasAttribute('data-set-theme-superfluid')) ||
           (choice === 'lab' && button.hasAttribute('data-set-theme-lab')) ||
           (choice === 'light' && button.classList.contains('js-set-theme-light')) ||
           (choice === 'dark' && button.classList.contains('js-set-theme-dark')) ||
@@ -216,6 +217,16 @@
       document.body.dataset.themeStyle = enabled ? 'lab' : '';
     }
 
+    function applySuperfluidTheme(enabled) {
+      document.documentElement.classList.toggle('superfluid-theme', enabled);
+      document.body.classList.toggle('superfluid-theme', enabled);
+      if (enabled) {
+        document.body.dataset.themeStyle = 'superfluid';
+      } else if (document.body.dataset.themeStyle === 'superfluid') {
+        document.body.dataset.themeStyle = '';
+      }
+    }
+
     function applyBaseTheme(isDark) {
       document.body.classList.toggle('dark', isDark);
       localStorage.setItem('wcTheme', isDark ? '1' : '0');
@@ -225,17 +236,25 @@
       localStorage.setItem(choiceKey, choice);
       localStorage.removeItem(legacyLabKey);
 
-      if (choice === 'lab') {
+      if (choice === 'superfluid') {
+        applyBaseTheme(true);
+        applyLabTheme(false);
+        applySuperfluidTheme(true);
+      } else if (choice === 'lab') {
         applyBaseTheme(false);
+        applySuperfluidTheme(false);
         applyLabTheme(true);
       } else if (choice === 'dark') {
         applyLabTheme(false);
+        applySuperfluidTheme(false);
         applyBaseTheme(true);
       } else if (choice === 'auto') {
         applyLabTheme(false);
+        applySuperfluidTheme(false);
         applyBaseTheme(isAutoDarkNow());
       } else {
         applyLabTheme(false);
+        applySuperfluidTheme(false);
         applyBaseTheme(false);
       }
 
@@ -246,10 +265,19 @@
       var menu = document.querySelector('.theme-dropdown .dropdown-menu');
       if (!menu) return;
 
+      var superfluidButton = menu.querySelector('[data-set-theme-superfluid]');
       var labButton = menu.querySelector('[data-set-theme-lab]');
       var lightButton = menu.querySelector('.js-set-theme-light');
       var darkButton = menu.querySelector('.js-set-theme-dark');
       var autoButton = menu.querySelector('.js-set-theme-auto');
+
+      if (!superfluidButton) {
+        superfluidButton = document.createElement('a');
+        superfluidButton.href = '#';
+        superfluidButton.className = 'dropdown-item js-set-theme-superfluid';
+        superfluidButton.setAttribute('data-set-theme-superfluid', '');
+        superfluidButton.innerHTML = '<span>Superfluid</span>';
+      }
 
       if (!labButton) {
         labButton = document.createElement('a');
@@ -259,22 +287,24 @@
         labButton.innerHTML = '<span>Lab</span>';
       }
 
-      [labButton, lightButton, darkButton, autoButton].forEach(function (button) {
+      [superfluidButton, labButton, lightButton, darkButton, autoButton].forEach(function (button) {
         if (button) menu.appendChild(button);
       });
     }
 
     document.addEventListener('click', function (event) {
+      var superfluidButton = event.target.closest('[data-set-theme-superfluid]');
       var labButton = event.target.closest('[data-set-theme-lab]');
       var lightButton = event.target.closest('.js-set-theme-light');
       var darkButton = event.target.closest('.js-set-theme-dark');
       var autoButton = event.target.closest('.js-set-theme-auto');
 
-      if (!labButton && !lightButton && !darkButton && !autoButton) return;
+      if (!superfluidButton && !labButton && !lightButton && !darkButton && !autoButton) return;
 
       event.preventDefault();
       event.stopPropagation();
 
+      if (superfluidButton) setThemeChoice('superfluid');
       if (labButton) setThemeChoice('lab');
       if (lightButton) setThemeChoice('light');
       if (darkButton) setThemeChoice('dark');
@@ -288,7 +318,7 @@
       var urlTheme = url.searchParams.get('theme');
       var savedChoice = localStorage.getItem(choiceKey);
 
-      if (urlTheme === 'lab' || urlTheme === 'light' || urlTheme === 'dark' || urlTheme === 'auto') {
+      if (urlTheme === 'superfluid' || urlTheme === 'lab' || urlTheme === 'light' || urlTheme === 'dark' || urlTheme === 'auto') {
         setThemeChoice(urlTheme);
       } else if (savedChoice) {
         setThemeChoice(savedChoice);
@@ -310,3 +340,201 @@
     }
   })();
 </script>
+
+
+
+
+<script>
+  (function () {
+    var canvas;
+    var ctx;
+    var width = 0;
+    var height = 0;
+    var atoms = [];
+    var mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2, active: false };
+    var loadingCenter = { x: mouse.x, y: mouse.y, startedAt: 0, active: false };
+    var lastSpawn = 0;
+    var raf = 0;
+
+    function isSuperfluid() {
+      return document.body.classList.contains('superfluid-theme') || document.body.dataset.themeStyle === 'superfluid';
+    }
+
+    function isAtomLoadingZone(target) {
+      if (!target || !target.closest) return false;
+      if (target.closest('.page-header, .navbar, .dropdown-menu, .nav-icons, button, a, input, textarea, select, label')) return false;
+      return !!target.closest('.page-body, main, .home-section');
+    }
+
+    function ensureCanvas() {
+      if (canvas) return;
+      canvas = document.createElement('canvas');
+      canvas.id = 'jim-superfluid-loader-canvas';
+      canvas.setAttribute('aria-hidden', 'true');
+      canvas.style.position = 'fixed';
+      canvas.style.inset = '0';
+      canvas.style.zIndex = '2';
+      canvas.style.pointerEvents = 'none';
+      canvas.style.mixBlendMode = 'screen';
+      canvas.style.filter = 'saturate(1.35) brightness(1.18)';
+      canvas.style.opacity = '0';
+      canvas.style.transition = 'opacity 240ms ease';
+      document.body.appendChild(canvas);
+      ctx = canvas.getContext('2d');
+      resizeCanvas();
+    }
+
+    function resizeCanvas() {
+      if (!canvas) return;
+      var ratio = Math.min(window.devicePixelRatio || 1, 2);
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = Math.floor(width * ratio);
+      canvas.height = Math.floor(height * ratio);
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function spawnLattice(now) {
+      if (!mouse.active || now - lastSpawn < 120 || !isSuperfluid()) return;
+      lastSpawn = now;
+      if (!loadingCenter.active) {
+        loadingCenter.active = true;
+        loadingCenter.x = mouse.x;
+        loadingCenter.y = mouse.y;
+        loadingCenter.startedAt = now;
+      }
+
+      var loadTime = Math.min(1, (now - loadingCenter.startedAt) / 10000);
+      var radius = 14 + 166 * (loadTime * loadTime * (3 - 2 * loadTime));
+      var spacing = 18;
+      var jitter = 2.6;
+      for (var gx = -radius; gx <= radius; gx += spacing) {
+        for (var gy = -radius; gy <= radius; gy += spacing) {
+          var d = Math.sqrt(gx * gx + gy * gy);
+          if (Math.max(Math.abs(gx), Math.abs(gy)) > radius || Math.random() < 0.48) continue;
+          var edgeFalloff = 1 - Math.max(Math.abs(gx), Math.abs(gy)) / Math.max(radius, 1);
+          atoms.push({
+            x: loadingCenter.x + gx + (Math.random() - 0.5) * jitter,
+            y: loadingCenter.y + gy + (Math.random() - 0.5) * jitter,
+            vx: (Math.random() - 0.5) * 0.06,
+            vy: (Math.random() - 0.5) * 0.06,
+            life: 0,
+            ttl: mouse.active ? 18000 + Math.random() * 4000 : 2000,
+            size: 1.9 + Math.random() * 1.8,
+            phase: Math.random() * Math.PI * 2,
+            hue: Math.random() < 0.72 ? 176 : 263,
+            alpha: 0.72 + edgeFalloff * 1.85
+          });
+        }
+      }
+      if (atoms.length > 1000) atoms.splice(0, atoms.length - 1000);
+    }
+
+    function drawAtom(atom, brightness) {
+      var color = atom.hue === 176 ? '101, 255, 241' : '181, 132, 255';
+      var glow = ctx.createRadialGradient(atom.x, atom.y, 0, atom.x, atom.y, atom.size * 6.5);
+      glow.addColorStop(0, 'rgba(' + color + ',' + Math.min(1, 2.05 * brightness) + ')');
+      glow.addColorStop(0.38, 'rgba(' + color + ',' + Math.min(1, 1.32 * brightness) + ')');
+      glow.addColorStop(1, 'rgba(' + color + ',0)');
+      ctx.fillStyle = glow;
+      ctx.beginPath();
+      ctx.arc(atom.x, atom.y, atom.size * 13.5, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = 'rgba(255, 255, 255,' + Math.min(1, 2.1 * brightness) + ')';
+      ctx.beginPath();
+      ctx.arc(atom.x, atom.y, atom.size * 1.55, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function frame(now) {
+      ensureCanvas();
+      var active = isSuperfluid();
+      canvas.style.opacity = active ? '1' : '0';
+      ctx.clearRect(0, 0, width, height);
+      if (active) {
+        spawnLattice(now);
+        ctx.save();
+        ctx.globalCompositeOperation = 'lighter';
+        for (var i = atoms.length - 1; i >= 0; i--) {
+          var atom = atoms[i];
+          atom.life += 16.7;
+          atom.x += atom.vx;
+          atom.y += atom.vy;
+          var t = atom.life / atom.ttl;
+          if (t >= 1) {
+            atoms.splice(i, 1);
+            continue;
+          }
+          var pulse = 0.65 + 0.35 * Math.sin(now / 110 + atom.phase);
+          var loadTime = Math.min(1, atom.life / 10000);
+          var slowLoad = Math.pow(loadTime, 1.55);
+          var fadeIn = 0.03 + 0.97 * slowLoad * slowLoad * (3 - 2 * slowLoad);
+          var fadeOut = t < 0.78 ? 1 : Math.pow(1 - (t - 0.78) / 0.22, 1.4);
+          drawAtom(atom, atom.alpha * pulse * fadeIn * fadeOut);
+        }
+        ctx.restore();
+      } else {
+        atoms.length = 0;
+      }
+      raf = window.requestAnimationFrame(frame);
+    }
+
+    function start() {
+      ensureCanvas();
+      if (!raf) raf = window.requestAnimationFrame(frame);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('pointermove', function (event) {
+      mouse.x = event.clientX;
+      mouse.y = event.clientY;
+      var nextActive = isAtomLoadingZone(event.target);
+      if (!nextActive) {
+        mouse.active = false;
+        loadingCenter.active = false;
+        atoms.forEach(function (atom) { atom.ttl = Math.min(atom.ttl, atom.life + 2000); });
+        return;
+      }
+      if (!mouse.active || Math.hypot(mouse.x - loadingCenter.x, mouse.y - loadingCenter.y) > 26) {
+        loadingCenter.active = false;
+      }
+      mouse.active = true;
+    }, { passive: true });
+    window.addEventListener('pointerleave', function () {
+      mouse.active = false;
+      loadingCenter.active = false;
+      atoms.forEach(function (atom) { atom.ttl = Math.min(atom.ttl, atom.life + 2000); });
+    });
+    window.addEventListener('blur', function () {
+      mouse.active = false;
+      loadingCenter.active = false;
+      atoms.forEach(function (atom) { atom.ttl = Math.min(atom.ttl, atom.life + 2000); });
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', start);
+    } else {
+      start();
+    }
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
