@@ -1222,3 +1222,67 @@ body[data-theme-style="superfluid"] .nav-icons {
     right: 0.75rem !important;
   }
 }
+
+/* Superfluid performance mode for public web pages. */
+html.superfluid-theme body::before,
+body.superfluid-theme::before,
+body[data-theme-style="superfluid"]::before {
+  animation-duration: 34s !important;
+  opacity: 0.72 !important;
+  filter: none !important;
+}
+
+html.superfluid-theme body::after,
+body.superfluid-theme::after,
+body[data-theme-style="superfluid"]::after {
+  animation-duration: 42s !important;
+  opacity: 0.16 !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  background:
+    repeating-linear-gradient(103deg, transparent 0 74px, rgba(48, 213, 200, 0.12) 78px 82px, transparent 88px 170px),
+    repeating-linear-gradient(37deg, transparent 0 106px, rgba(138, 92, 246, 0.10) 110px 114px, transparent 120px 220px) !important;
+}
+
+html.superfluid-theme body .page-body::before,
+body.superfluid-theme .page-body::before,
+body[data-theme-style="superfluid"] .page-body::before,
+html.superfluid-theme body .page-body::after,
+body.superfluid-theme .page-body::after,
+body[data-theme-style="superfluid"] .page-body::after {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 0.22 !important;
+  animation-duration: 36s !important;
+}
+
+html.superfluid-theme body .home-section,
+body.superfluid-theme .home-section,
+body[data-theme-style="superfluid"] .home-section,
+html.superfluid-theme body .navbar,
+body.superfluid-theme .navbar,
+body[data-theme-style="superfluid"] .navbar {
+  backdrop-filter: none !important;
+}
+
+#jim-superfluid-loader-canvas {
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  html.superfluid-theme body::before,
+  body.superfluid-theme::before,
+  body[data-theme-style="superfluid"]::before,
+  html.superfluid-theme body::after,
+  body.superfluid-theme::after,
+  body[data-theme-style="superfluid"]::after,
+  html.superfluid-theme body .page-body::before,
+  body.superfluid-theme .page-body::before,
+  body[data-theme-style="superfluid"] .page-body::before,
+  html.superfluid-theme body .page-body::after,
+  body.superfluid-theme .page-body::after,
+  body[data-theme-style="superfluid"] .page-body::after {
+    animation: none !important;
+  }
+}

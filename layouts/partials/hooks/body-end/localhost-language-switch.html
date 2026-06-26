@@ -351,6 +351,8 @@
     var width = 0;
     var height = 0;
     var atoms = [];
+    var lastFrameTime = 0;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2, active: false };
     var loadingCenter = { x: mouse.x, y: mouse.y, startedAt: 0, active: false };
     var lastSpawn = 0;
@@ -376,7 +378,7 @@
       canvas.style.zIndex = '2';
       canvas.style.pointerEvents = 'none';
       canvas.style.mixBlendMode = 'screen';
-      canvas.style.filter = 'saturate(1.35) brightness(1.18)';
+      canvas.style.filter = 'saturate(1.15) brightness(1.05)';
       canvas.style.opacity = '0';
       canvas.style.transition = 'opacity 240ms ease';
       document.body.appendChild(canvas);
@@ -386,7 +388,7 @@
 
     function resizeCanvas() {
       if (!canvas) return;
-      var ratio = Math.min(window.devicePixelRatio || 1, 2);
+      var ratio = Math.min(window.devicePixelRatio || 1, 1.25);
       width = window.innerWidth;
       height = window.innerHeight;
       canvas.width = Math.floor(width * ratio);
@@ -397,7 +399,7 @@
     }
 
     function spawnLattice(now) {
-      if (!mouse.active || now - lastSpawn < 120 || !isSuperfluid()) return;
+      if (reduceMotion || !mouse.active || now - lastSpawn < 260 || !isSuperfluid()) return;
       lastSpawn = now;
       if (!loadingCenter.active) {
         loadingCenter.active = true;
@@ -407,13 +409,13 @@
       }
 
       var loadTime = Math.min(1, (now - loadingCenter.startedAt) / 10000);
-      var radius = 14 + 166 * (loadTime * loadTime * (3 - 2 * loadTime));
-      var spacing = 18;
+      var radius = 12 + 116 * (loadTime * loadTime * (3 - 2 * loadTime));
+      var spacing = 20;
       var jitter = 2.6;
       for (var gx = -radius; gx <= radius; gx += spacing) {
         for (var gy = -radius; gy <= radius; gy += spacing) {
           var d = Math.sqrt(gx * gx + gy * gy);
-          if (Math.max(Math.abs(gx), Math.abs(gy)) > radius || Math.random() < 0.48) continue;
+          if (Math.max(Math.abs(gx), Math.abs(gy)) > radius || Math.random() < 0.72) continue;
           var edgeFalloff = 1 - Math.max(Math.abs(gx), Math.abs(gy)) / Math.max(radius, 1);
           atoms.push({
             x: loadingCenter.x + gx + (Math.random() - 0.5) * jitter,
@@ -429,7 +431,7 @@
           });
         }
       }
-      if (atoms.length > 1000) atoms.splice(0, atoms.length - 1000);
+      if (atoms.length > 260) atoms.splice(0, atoms.length - 260);
     }
 
     function drawAtom(atom, brightness) {
@@ -440,12 +442,12 @@
       glow.addColorStop(1, 'rgba(' + color + ',0)');
       ctx.fillStyle = glow;
       ctx.beginPath();
-      ctx.arc(atom.x, atom.y, atom.size * 13.5, 0, Math.PI * 2);
+      ctx.arc(atom.x, atom.y, atom.size * 5.2, 0, Math.PI * 2);
       ctx.fill();
 
       ctx.fillStyle = 'rgba(255, 255, 255,' + Math.min(1, 2.1 * brightness) + ')';
       ctx.beginPath();
-      ctx.arc(atom.x, atom.y, atom.size * 1.55, 0, Math.PI * 2);
+      ctx.arc(atom.x, atom.y, atom.size * 1.25, 0, Math.PI * 2);
       ctx.fill();
     }
 
@@ -453,6 +455,16 @@
       ensureCanvas();
       var active = isSuperfluid();
       canvas.style.opacity = active ? '1' : '0';
+      if (document.hidden) {
+        raf = window.requestAnimationFrame(frame);
+        return;
+      }
+      if (now - lastFrameTime < 33) {
+        raf = window.requestAnimationFrame(frame);
+        return;
+      }
+      var delta = Math.min(50, now - (lastFrameTime || now));
+      lastFrameTime = now;
       ctx.clearRect(0, 0, width, height);
       if (active) {
         spawnLattice(now);
@@ -460,7 +472,7 @@
         ctx.globalCompositeOperation = 'lighter';
         for (var i = atoms.length - 1; i >= 0; i--) {
           var atom = atoms[i];
-          atom.life += 16.7;
+          atom.life += delta;
           atom.x += atom.vx;
           atom.y += atom.vy;
           var t = atom.life / atom.ttl;
@@ -521,6 +533,7 @@
     }
   })();
 </script>
+
 
 
 
