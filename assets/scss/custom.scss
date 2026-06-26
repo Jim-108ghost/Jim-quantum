@@ -1286,3 +1286,29 @@ body[data-theme-style="superfluid"] .navbar {
     animation: none !important;
   }
 }
+
+
+/* Superfluid: anchor dropdowns to their own navbar buttons, not the viewport. */
+html.superfluid-theme body .theme-dropdown,
+html.superfluid-theme body .i18n-dropdown,
+body.superfluid-theme .theme-dropdown,
+body.superfluid-theme .i18n-dropdown,
+body[data-theme-style="superfluid"] .theme-dropdown,
+body[data-theme-style="superfluid"] .i18n-dropdown {
+  position: relative !important;
+}
+
+html.superfluid-theme body .theme-dropdown .dropdown-menu,
+body.superfluid-theme .theme-dropdown .dropdown-menu,
+body[data-theme-style="superfluid"] .theme-dropdown .dropdown-menu,
+html.superfluid-theme body .i18n-dropdown .dropdown-menu,
+body.superfluid-theme .i18n-dropdown .dropdown-menu,
+body[data-theme-style="superfluid"] .i18n-dropdown .dropdown-menu {
+  position: absolute !important;
+  top: 100% !important;
+  right: 0 !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 3000 !important;
+}
+
