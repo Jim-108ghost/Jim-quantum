@@ -1,4 +1,5 @@
-hugo: collected modules in 1761 ms
+hugo: downloading modules …
+hugo: collected modules in 2247 ms
 Watching for changes in C:\Users\18059\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!hugo!blox\hugo-blox-builder\modules\{blox-bootstrap,blox-plugin-netlify@v1.1.2-0.20231108141515-0478cf6921f9,blox-plugin-reveal@v1.1.2}
 Watching for changes in D:\myprojects\Jim_personal_page\{assets,content,data,layouts,static}
 Watching for config changes in D:\myprojects\Jim_personal_page\config\_default, C:\Users\18059\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!hugo!blox\hugo-blox-builder\modules\blox-plugin-netlify@v1.1.2-0.20231108141515-0478cf6921f9\config.yaml, C:\Users\18059\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!hugo!blox\hugo-blox-builder\modules\blox-plugin-reveal@v1.1.2\config.yaml, C:\Users\18059\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!hugo!blox\hugo-blox-builder\modules\blox-bootstrap\v5@v5.9.7\hugo.yaml, D:\myprojects\Jim_personal_page\go.mod
@@ -6,170 +7,18 @@ Start building sites …
 hugo v0.125.6-69ede10edcd539380914bbee58d4d32953dd8b43+extended windows/amd64 BuildDate=2024-05-05T10:52:52Z VendorInfo=gohugoio
 
 
-                   | EN | ZH  
--------------------+----+-----
-  Pages            | 73 | 83  
-  Paginator pages  |  1 |  1  
-  Non-page files   | 13 | 11  
-  Static files     | 21 | 21  
-  Processed images | 34 |  0  
-  Aliases          | 24 | 22  
-  Cleaned          |  0 |  0  
+                   | EN | ZH   
+-------------------+----+------
+  Pages            | 78 | 114  
+  Paginator pages  |  1 |   3  
+  Non-page files   | 13 |  11  
+  Static files     | 21 |  21  
+  Processed images | 34 |   0  
+  Aliases          | 26 |  24  
+  Cleaned          |  0 |   0  
 
-Built in 4422 ms
+Built in 5456 ms
 Environment: "development"
 Serving pages from disk
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
 Press Ctrl+C to stop
-
-Change detected, rebuilding site (#1).
-2026-06-24 10:46:05.483 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 688 ms
-
-Change detected, rebuilding site (#2).
-2026-06-24 10:47:37.978 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 776 ms
-
-Change detected, rebuilding site (#3).
-2026-06-24 11:03:51.487 +0800
-Asset changed /scss/custom.scss
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 2347 ms
-
-Change detected, rebuilding site (#4).
-2026-06-24 11:06:09.486 +0800
-Asset changed /scss/custom.scss
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 249 ms
-
-Change detected, rebuilding site (#5).
-2026-06-24 11:10:06.489 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 4127 ms
-
-Change detected, rebuilding site (#6).
-2026-06-24 11:10:32.485 +0800
-Asset changed /scss/custom.scss
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 251 ms
-
-Change detected, rebuilding site (#7).
-2026-06-24 11:12:34.479 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1385 ms
-
-Change detected, rebuilding site (#8).
-2026-06-24 11:15:39.994 +0800
-Asset changed /scss/custom.scss
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 275 ms
-
-Change detected, rebuilding site (#9).
-2026-06-24 11:17:32.989 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1371 ms
-
-Change detected, rebuilding site (#10).
-2026-06-24 11:18:07.479 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1316 ms
-
-Change detected, rebuilding site (#11).
-2026-06-24 11:20:58.484 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1360 ms
-
-Change detected, rebuilding site (#12).
-2026-06-24 11:21:28.487 +0800
-Asset changed /scss/custom.scss
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 849 ms
-
-Change detected, rebuilding site (#13).
-2026-06-24 11:21:57.476 +0800
-Asset changed /scss/custom.scss
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 601 ms
-
-Change detected, rebuilding site (#14).
-2026-06-24 11:23:47.476 +0800
-Asset changed /scss/custom.scss
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 267 ms
-
-Change detected, rebuilding site (#15).
-2026-06-24 11:24:21.976 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1392 ms
-
-Change detected, rebuilding site (#16).
-2026-06-24 11:24:49.490 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1248 ms
-
-Change detected, rebuilding site (#17).
-2026-06-24 11:27:42.480 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1455 ms
-
-Change detected, rebuilding site (#18).
-2026-06-24 11:39:25.477 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1573 ms
-
-Change detected, rebuilding site (#19).
-2026-06-24 11:42:39.488 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1019 ms
-
-Change detected, rebuilding site (#20).
-2026-06-24 11:49:32.975 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1075 ms
-
-Change detected, rebuilding site (#21).
-2026-06-24 11:51:41.989 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1030 ms
-
-Change detected, rebuilding site (#22).
-2026-06-24 11:57:12.982 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1449 ms
-
-Change detected, rebuilding site (#23).
-2026-06-24 12:00:01.489 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 1050 ms
-
-Change detected, rebuilding site (#24).
-2026-06-24 12:01:52.477 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 942 ms
-
-Change detected, rebuilding site (#25).
-2026-06-24 12:02:47.976 +0800
-Template changed /partials/hooks/body-end/localhost-language-switch.html
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 878 ms
