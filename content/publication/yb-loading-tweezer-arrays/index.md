@@ -18,10 +18,10 @@ date: "2026-07-08T00:00:00Z"
 doi: "10.1103/bp6k-8zmd"
 publishDate: "2026-07-08T00:00:00Z"
 publication_types: ["article-journal"]
-publication: "*Physical Review Letters*, accepted 8 July 2026"
+publication: "*Physical Review Letters*, Editors' Suggestion"
 publication_short: "*Phys. Rev. Lett.*"
 abstract: ""
-summary: "A report of high-efficiency loading of 2,400 ytterbium atoms in optical tweezer arrays."
+summary: "Editors' Suggestion in Physical Review Letters on high-efficiency loading of 2,400 ytterbium atoms in optical tweezer arrays."
 tags:
   - Ytterbium
   - Optical tweezer arrays
@@ -43,7 +43,8 @@ url_video: ""
 image:
   caption: ""
   focal_point: ""
-  preview_only: true
+  preview_only: false
 projects: []
 slides: ""
 ---
+

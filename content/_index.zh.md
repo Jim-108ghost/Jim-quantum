@@ -122,11 +122,13 @@ sections:
       text: |-
         <div class="selected-publications">
           <article class="selected-publication">
-            <div class="selected-pub-thumb selected-pub-thumb-empty"></div>
+            <div class="selected-pub-thumb">
+              <img src="../media/publications/yb-loading-tweezer-arrays.jpg" alt="Ytterbium optical tweezer array illustration">
+            </div>
             <div class="selected-pub-body">
               <h3><a href="publication/yb-loading-tweezer-arrays/">High-efficiency loading of 2,400 ytterbium atoms in optical tweezer arrays</a></h3>
               <p class="selected-pub-authors">Zhu, J.; Chen, C.; Zhou, L.; <strong>Xie, X.-R.</strong>; Jiang, C.; Ding, Z.; Wu, F.; Yang, F.; Wang, G.; Gong, Q.; Zhang, P.; Zhang, S.; Peng, P.</p>
-              <p class="selected-pub-venue"><em>Physical Review Letters</em>, accepted 8 July 2026</p>
+              <p class="selected-pub-venue"><em>Physical Review Letters</em>, Editors' Suggestion</p>
               <div class="selected-pub-links">
                 <a href="publication/yb-loading-tweezer-arrays/">ABS</a>
                 <a href="https://doi.org/10.1103/bp6k-8zmd" target="_blank" rel="noopener">DOI</a>
@@ -306,4 +308,6 @@ sections:
     design:
       columns: '2'
 ---
+
+
 
