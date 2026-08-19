@@ -22,3 +22,31 @@ Environment: "development"
 Serving pages from disk
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
 Press Ctrl+C to stop
+
+Change of Static files detected, rebuilding site (#1).
+2026-08-13 10:32:36.594 +0800
+Syncing \media\publications\yb-loading-tweezer-arrays.jpg to \
+Syncing \media\publications\yb-loading-tweezer-arrays.jpg to \
+Syncing \media\publications\yb-loading-tweezer-arrays.jpg to \
+
+Change detected, rebuilding site (#2).
+2026-08-13 10:32:36.631 +0800
+Source changed /publication/yb-loading-tweezer-arrays/featured.jpg
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1325 ms
+
+Change detected, rebuilding site (#3).
+2026-08-13 10:34:45.100 +0800
+Source changed /_index.md
+Source changed /_index.zh.md
+Source changed /publication/yb-loading-tweezer-arrays/index.md
+Source changed /publication/yb-loading-tweezer-arrays/index.zh.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 901 ms
+
+Change detected, rebuilding site (#4).
+2026-08-13 10:43:59.593 +0800
+Source changed /_index.md
+Source changed /_index.zh.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 875 ms
